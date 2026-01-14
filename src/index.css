@@ -12,7 +12,7 @@
 @layer base {
   :root {
     /* Core brand colors - warm and inviting */
-    --background: 38 45% 96%;
+    --background: 40 50% 98%;
     --foreground: 25 40% 12%;
 
     --card: 38 40% 98%;

@@ -35,7 +35,7 @@ const Header = () => {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-muted-foreground hover:text-primary transition-colors font-medium"
+                className="text-orange hover:text-orange-dark transition-colors font-medium"
               >
                 {link.label}
               </a>
@@ -60,7 +60,7 @@ const Header = () => {
                 key={link.href}
                 href={link.href}
                 onClick={() => setIsOpen(false)}
-                className="block py-3 text-muted-foreground hover:text-primary transition-colors font-medium"
+                className="block py-3 text-orange hover:text-orange-dark transition-colors font-medium"
               >
                 {link.label}
               </a>
