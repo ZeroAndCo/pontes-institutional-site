@@ -16,9 +16,12 @@ const Contact = () => {
               <span className="text-gradient-brand">pontes</span> juntos?
             </h2>
 
+            <p className="text-lg text-muted-foreground mb-4 leading-relaxed">
+              Se interessou por nosso trabalho? Entre em contato com a gente! 
+            </p>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              Se você quer participar das nossas ações, firmar parcerias ou saber mais 
-              sobre como podemos trabalhar juntos, entre em contato conosco.
+              Vamos desenvolver um projeto juntos para sua empresa ou instituição ou firmar uma parceria para projetos 
+              futuros ou venha integrar nossa rede colaboradora!
             </p>
 
             {/* Contact Info */}
@@ -70,29 +73,30 @@ const Contact = () => {
                 Seja parte dessa transformação
               </h3>
 
-              <p className="text-white/90 mb-8 leading-relaxed">
-                Empresas, instituições e pessoas podem participar das nossas ações de 
-                diferentes formas. Vamos conversar sobre como criar impacto através da leitura.
+              <p className="text-white/90 mb-2 leading-relaxed">
+                Ler é também construir identidade e um meio de compreender o mundo, os outros e a nós mesmos.
               </p>
 
-              <div className="space-y-4">
+              <p className="text-white/90 mb-6 leading-relaxed">
+                Ensinar a ler é promover:
+              </p>
+
+              <div className="space-y-4 mb-4">
                 <div className="flex items-center gap-3">
                   <div className="w-2 h-2 rounded-full bg-orange-light" />
-                  <span className="text-white/90">Campanhas de doação de livros</span>
+                  <span className="text-white/90">Autonomia intelectual</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="w-2 h-2 rounded-full bg-orange-light" />
-                  <span className="text-white/90">Parcerias institucionais</span>
+                  <span className="text-white/90">Pertencimento</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="w-2 h-2 rounded-full bg-orange-light" />
-                  <span className="text-white/90">Projetos para marcas</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <div className="w-2 h-2 rounded-full bg-orange-light" />
-                  <span className="text-white/90">Eventos e ativações</span>
+                  <span className="text-white/90">Humanidade</span>
                 </div>
               </div>
+
+              <p className="text-white/90 mb-4 leading-relaxed">Seja parte desta transformação!</p>
 
               <a
                 href="https://www.instagram.com/pontes_para_leitura/"
