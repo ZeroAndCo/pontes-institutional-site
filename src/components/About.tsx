@@ -1,4 +1,4 @@
-import { Sparkles, Target, Eye } from "lucide-react";
+import { Sparkles, Target, Fence } from "lucide-react";
 
 const About = () => {
   const values = [
@@ -13,9 +13,9 @@ const About = () => {
       description: "Usamos a leitura como ponte para transformação social e redução de desigualdades.",
     },
     {
-      icon: Eye,
-      title: "Transparência",
-      description: "Gestão clara dos recursos e prestação de contas de todas as entregas.",
+      icon: Fence,
+      title: "Desenvolvimento Territorial",
+      description: "Fortalecimento de comunidades através da cultura leitora que promove educação.",
     },
   ];
 
