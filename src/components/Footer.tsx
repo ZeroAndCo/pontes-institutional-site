@@ -1,7 +1,16 @@
 import { Heart } from "lucide-react";
 import logo from "@/assets/logo.jpeg";
+import { analytics } from "@/lib/analytics";
 
 const Footer = () => {
+  const footerLinks = [
+    { href: "#sobre", label: "Sobre" },
+    { href: "#como-atuamos", label: "Como Atuamos" },
+    { href: "#pilares", label: "Pilares" },
+    { href: "#equipe", label: "Equipe" },
+    { href: "#contato", label: "Contato" },
+  ];
+
   return (
     <footer className="bg-brown text-cream py-12">
       <div className="container-wide mx-auto px-6">
@@ -21,21 +30,16 @@ const Footer = () => {
 
           {/* Links */}
           <nav className="flex flex-wrap justify-center gap-6 text-cream/80">
-            <a href="#sobre" className="hover:text-cream transition-colors">
-              Sobre
-            </a>
-            <a href="#como-atuamos" className="hover:text-cream transition-colors">
-              Como Atuamos
-            </a>
-            <a href="#pilares" className="hover:text-cream transition-colors">
-              Pilares
-            </a>
-            <a href="#equipe" className="hover:text-cream transition-colors">
-              Equipe
-            </a>
-            <a href="#contato" className="hover:text-cream transition-colors">
-              Contato
-            </a>
+            {footerLinks.map((link) => (
+              <a 
+                key={link.href}
+                href={link.href} 
+                onClick={() => analytics.navClick(`footer_${link.label}`)}
+                className="hover:text-cream transition-colors"
+              >
+                {link.label}
+              </a>
+            ))}
           </nav>
         </div>
 

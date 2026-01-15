@@ -1,5 +1,6 @@
 import { BookOpen, Heart, Users } from "lucide-react";
 import logo from "@/assets/logo.jpeg";
+import { analytics } from "@/lib/analytics";
 
 const Hero = () => {
   return (
@@ -39,12 +40,14 @@ const Hero = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
               <a
                 href="#sobre"
+                onClick={() => analytics.ctaClick('conheca_trabalho', 'hero')}
                 className="inline-flex items-center justify-center px-8 py-4 bg-accent text-accent-foreground font-semibold rounded-lg hover:bg-orange-dark transition-all hover:scale-105 shadow-lg"
               >
                 Conheça nosso trabalho
               </a>
               <a
                 href="#contato"
+                onClick={() => analytics.ctaClick('entre_contato', 'hero')}
                 className="inline-flex items-center justify-center px-8 py-4 bg-cream/10 text-cream border-2 border-cream/30 font-semibold rounded-lg hover:bg-cream/20 transition-all"
               >
                 Entre em contato
