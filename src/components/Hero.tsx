@@ -50,31 +50,6 @@ const Hero = () => {
                 Entre em contato
               </a>
             </div>
-
-            {/* Stats */}
-            <div className="grid grid-cols-3 gap-6 mt-12 animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
-              <div className="text-center lg:text-left">
-                <div className="flex items-center justify-center lg:justify-start gap-2 text-orange-light mb-1">
-                  <BookOpen size={20} />
-                  <span className="text-2xl md:text-3xl font-bold text-cream">115k+</span>
-                </div>
-                <p className="text-cream/70 text-sm">Livros distribuídos</p>
-              </div>
-              <div className="text-center lg:text-left">
-                <div className="flex items-center justify-center lg:justify-start gap-2 text-orange-light mb-1">
-                  <Heart size={20} />
-                  <span className="text-2xl md:text-3xl font-bold text-cream">590+</span>
-                </div>
-                <p className="text-cream/70 text-sm">Bibliotecas atendidas</p>
-              </div>
-              <div className="text-center lg:text-left">
-                <div className="flex items-center justify-center lg:justify-start gap-2 text-orange-light mb-1">
-                  <Users size={20} />
-                  <span className="text-2xl md:text-3xl font-bold text-cream">5</span>
-                </div>
-                <p className="text-cream/70 text-sm">Regiões do Brasil</p>
-              </div>
-            </div>
           </div>
 
           {/* Logo/Visual */}
