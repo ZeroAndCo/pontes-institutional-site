@@ -1,7 +1,7 @@
-import { AlertTriangle, TrendingDown, BookX } from "lucide-react";
+import { AlertTriangle, TrendingDown, BookX, Sparkles, GraduationCap, Users } from "lucide-react";
 
 const Stats = () => {
-  const stats = [
+  const problemStats = [
     {
       icon: BookX,
       value: "53%",
@@ -19,6 +19,24 @@ const Stats = () => {
       value: "36%",
       label: "têm dificuldade de compreensão",
       detail: "72 milhões revelaram dificuldades para entender o que leem",
+    },
+  ];
+
+  const benefits = [
+    {
+      icon: Sparkles,
+      title: "Desenvolvimento Pessoal",
+      description: "A leitura enriquece o vocabulário, aprimora a escrita e melhora a capacidade de comunicação. Ela também estimula a criatividade e a empatia.",
+    },
+    {
+      icon: GraduationCap,
+      title: "Educação e Conhecimento",
+      description: "Livros são fontes inesgotáveis de aprendizagem. Por meio da leitura, podemos adquirir habilidades específicas e entender conceitos complexos.",
+    },
+    {
+      icon: Users,
+      title: "Transformação Social",
+      description: "A leitura tem o poder de transformar sociedades. Ela fortalece a cidadania, promove o pensamento crítico e ajuda na luta contra a desigualdade.",
     },
   ];
 
@@ -41,9 +59,9 @@ const Stats = () => {
           </p>
         </div>
 
-        {/* Stats Grid */}
-        <div className="grid md:grid-cols-3 gap-8">
-          {stats.map((stat) => (
+        {/* Problem Stats Grid */}
+        <div className="grid md:grid-cols-3 gap-8 mb-20">
+          {problemStats.map((stat) => (
             <div
               key={stat.label}
               className="group p-8 bg-white/10 rounded-2xl backdrop-blur-sm border border-white/10 hover:bg-white/15 transition-all text-center"
@@ -68,9 +86,41 @@ const Stats = () => {
         </div>
 
         {/* Source */}
-        <p className="text-center text-white/50 text-sm mt-12">
+        <p className="text-center text-white/50 text-sm mb-16">
           Fonte: 6ª edição da pesquisa Retratos da Leitura no Brasil - Instituto Pró-Livro, 2025
         </p>
+
+        {/* Benefits Section */}
+        <div className="text-center max-w-3xl mx-auto mb-12">
+          <h3 className="text-2xl md:text-3xl font-display font-bold mb-4">
+            Por que a leitura <span className="text-orange-light">transforma</span>
+          </h3>
+          <p className="text-white/80">
+            Os benefícios da leitura vão muito além do entretenimento.
+          </p>
+        </div>
+
+        {/* Benefits Grid */}
+        <div className="grid md:grid-cols-3 gap-8">
+          {benefits.map((benefit) => (
+            <div
+              key={benefit.title}
+              className="group p-8 bg-accent/20 rounded-2xl border border-accent/30 hover:bg-accent/30 transition-all text-center"
+            >
+              <div className="inline-flex p-4 rounded-full bg-white/10 text-orange-light mb-6">
+                <benefit.icon size={32} />
+              </div>
+
+              <h3 className="text-xl font-semibold text-white mb-4">
+                {benefit.title}
+              </h3>
+
+              <p className="text-white/70 text-sm leading-relaxed">
+                {benefit.description}
+              </p>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
