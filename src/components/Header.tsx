@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import logo from "@/assets/logo.jpeg";
+import { analytics } from "@/lib/analytics";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,6 +13,10 @@ const Header = () => {
     { href: "#equipe", label: "Equipe" },
     { href: "#contato", label: "Contato" },
   ];
+
+  const handleNavClick = (section: string) => {
+    analytics.navClick(section);
+  };
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
@@ -35,6 +40,7 @@ const Header = () => {
               <a
                 key={link.href}
                 href={link.href}
+                onClick={() => handleNavClick(link.label)}
                 className="text-orange hover:text-orange-dark transition-colors font-medium"
               >
                 {link.label}
@@ -59,7 +65,10 @@ const Header = () => {
               <a
                 key={link.href}
                 href={link.href}
-                onClick={() => setIsOpen(false)}
+                onClick={() => {
+                  setIsOpen(false);
+                  handleNavClick(link.label);
+                }}
                 className="block py-3 text-orange hover:text-orange-dark transition-colors font-medium"
               >
                 {link.label}

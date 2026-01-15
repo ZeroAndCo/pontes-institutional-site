@@ -1,4 +1,5 @@
 import { Instagram, Mail, MapPin } from "lucide-react";
+import { analytics } from "@/lib/analytics";
 
 const Contact = () => {
   return (
@@ -30,6 +31,7 @@ const Contact = () => {
                 href="https://www.instagram.com/pontes_para_leitura/"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => analytics.contactClick('instagram')}
                 className="flex items-center gap-4 p-4 bg-card rounded-xl border border-border hover:border-accent hover:shadow-md transition-all group"
               >
                 <div className="p-3 rounded-lg bg-accent/10 text-accent group-hover:bg-accent group-hover:text-accent-foreground transition-colors">
@@ -43,6 +45,7 @@ const Contact = () => {
 
               <a
                 href="mailto:contato@pontesparaleitura.com.br"
+                onClick={() => analytics.contactClick('email')}
                 className="flex items-center gap-4 p-4 bg-card rounded-xl border border-border hover:border-primary hover:shadow-md transition-all group"
               >
                 <div className="p-3 rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
@@ -102,6 +105,7 @@ const Contact = () => {
                 href="https://www.instagram.com/pontes_para_leitura/"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => analytics.ctaClick('siga_trabalho', 'contact_cta')}
                 className="inline-flex items-center gap-2 mt-8 px-8 py-4 bg-accent text-accent-foreground font-semibold rounded-lg hover:bg-orange-dark transition-all hover:scale-105"
               >
                 <Instagram size={20} />

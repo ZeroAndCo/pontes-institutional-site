@@ -1,6 +1,7 @@
 import { Instagram, Linkedin, Mail } from "lucide-react";
 import adrianePhoto from "@/assets/adriane.jpeg";
 import nelmaPhoto from "@/assets/nelma.jpeg";
+import { analytics } from "@/lib/analytics";
 
 const Team = () => {
   const founders = [
@@ -87,13 +88,25 @@ const Team = () => {
 
                 {/* Social Links */}
                 <div className="flex gap-3 mt-auto">
-                  <a href={founder.instagram} className="p-2 rounded-lg bg-muted hover:bg-primary hover:text-primary-foreground transition-colors">
+                  <a 
+                    href={founder.instagram} 
+                    onClick={() => analytics.socialClick('instagram', founder.name)}
+                    className="p-2 rounded-lg bg-muted hover:bg-primary hover:text-primary-foreground transition-colors"
+                  >
                     <Instagram size={18} />
                   </a>
-                  <a href={founder.linkedin}  className="p-2 rounded-lg bg-muted hover:bg-primary hover:text-primary-foreground transition-colors">
+                  <a 
+                    href={founder.linkedin} 
+                    onClick={() => analytics.socialClick('linkedin', founder.name)}
+                    className="p-2 rounded-lg bg-muted hover:bg-primary hover:text-primary-foreground transition-colors"
+                  >
                     <Linkedin size={18} />
                   </a>
-                  <a href={`mailto:${founder.email}`} className="p-2 rounded-lg bg-muted hover:bg-primary hover:text-primary-foreground transition-colors">
+                  <a 
+                    href={`mailto:${founder.email}`} 
+                    onClick={() => analytics.socialClick('email', founder.name)}
+                    className="p-2 rounded-lg bg-muted hover:bg-primary hover:text-primary-foreground transition-colors"
+                  >
                     <Mail size={18} />
                   </a>
                 </div>
