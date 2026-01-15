@@ -20,7 +20,7 @@ const Team = () => {
       name: "Nelma Zero",
       role: "Co-idealizadora",
       company: "Zero&Co Consultoria",
-      bio: "Fundadora da consultoria Zero&Co, que atua com desenvolvimento territorial em sustentabilidade e impacto social, conectando territórios, iniciativas e parceiros.",
+      bio: "Fundadora da consultoria Zero&Co, que atua com desenvolvimento territorial em sustentabilidade e impacto social, conectando territórios, iniciativas, empresas e parceiros.",
       quote: "O que nos incentivou a criar o hub foi a possibilidade de juntar a paixão pela leitura e pelo impacto social criando ações múltiplas e diversas onde podemos construir espaços de igualdade e oportunidades para todos. E quem sabe aos poucos sermos um pouco da mudança dos números de leitura do Brasil.",
       linkedin: "https://www.linkedin.com/in/nelmazero/",
       instagram: "https://www.instagram.com/zeroand.co/",
@@ -109,8 +109,9 @@ const Team = () => {
              onde trazemos outros atores do ecossistema para somar conosco e no final termos um impacto escalável 
              e sistêmico. Queremos <span className="text-accent font-semibold">mais pessoas lendo</span>, 
              em <span className="text-teal font-semibold">mais lugares</span> e 
-             com isso tendo <span className="text-accent font-semibold">mais oportunidades</span>. Vêm com a gente!
+             com isso tendo <span className="text-accent font-semibold">mais oportunidades</span>.
           </p>
+          <p className="text-2xl text-foreground font-medium leading-relaxed mt-4 text-gradient-brand">Vem com a gente!</p>
         </div>
       </div>
     </section>
