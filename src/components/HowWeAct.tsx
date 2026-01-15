@@ -1,16 +1,16 @@
-import { Palette, Handshake, BookMarked, Building2, FileCheck } from "lucide-react";
+import { Palette, Handshake, BookMarked, Building2, FileCheck, Fence } from "lucide-react";
 
 const HowWeAct = () => {
   const actions = [
     {
+      icon: Building2,
+      title: "Projetos para marcas",
+      description: "Desenvolvimento de projetos de incentivo à leitura e cultura leitora para empresas.",
+    },
+    {
       icon: Palette,
       title: "Desenho de campanhas",
       description: "Campanhas de incentivo à leitura com foco em impacto social para territórios e públicos específicos.",
-    },
-    {
-      icon: Handshake,
-      title: "Articulação de parcerias",
-      description: "Conexão com iniciativas locais, editoras e instituições para fortalecer o ecossistema de leitura.",
     },
     {
       icon: BookMarked,
@@ -18,13 +18,18 @@ const HowWeAct = () => {
       description: "Seleção de livros novos para diferentes públicos e territórios, respeitando suas particularidades.",
     },
     {
-      icon: Building2,
-      title: "Projetos para marcas",
-      description: "Desenvolvimento de projetos de incentivo à leitura e cultura leitora para empresas.",
+      icon: Fence,
+      title: "Projetos Territoriais com Organizações",
+      description: "Desenvolvimento de projetos de incentivo è leitura junto de comunidades e territórios específicos com organizações voltadas ao impacto social.",
+    },
+    {
+      icon: Handshake,
+      title: "Articulação de parcerias",
+      description: "Conexão com iniciativas locais, editoras e instituições para fortalecer o ecossistema de leitura.",
     },
     {
       icon: FileCheck,
-      title: "Transparência e prestação de contas",
+      title: "Transparência, Mapeamento de Impacto e Relatoria",
       description: "Gestão clara dos recursos com relatórios detalhados de todas as entregas realizadas.",
     },
   ];
@@ -43,8 +48,7 @@ const HowWeAct = () => {
           </h2>
 
           <p className="text-lg text-muted-foreground">
-            Unimos duas frentes complementares: campanhas de doação de livros e articulação de parcerias 
-            com iniciativas locais, criando um caminho mais transparente e acessível.
+            O hub desenvolve projetos para desenvolver a cultura leitora, seja ao lado de empresas com foco em marketing social e responsabilidade social, seja ao lado de organização com foco em impacto social e desenvolvimento territorial. Sempre buscando criar um caminho agregador e acessível para a leitura.
           </p>
         </div>
 
