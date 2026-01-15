@@ -105,10 +105,11 @@ const Team = () => {
         {/* Mission Statement */}
         <div className="mt-16 text-center max-w-4xl mx-auto p-8 bg-card rounded-2xl border border-border">
           <p className="text-xl text-foreground font-medium leading-relaxed">
-            Juntas, elas criaram o hub Pontes para Leitura para somar forças, articular campanhas recorrentes 
-            e construir um impacto sistêmico: <span className="text-primary font-semibold">mais pessoas lendo</span>, 
-            em <span className="text-accent font-semibold">mais lugares</span>, 
-            com <span className="text-teal font-semibold">mais oportunidades</span>.
+            O Hub para Leitura já nasce como um <span className="text-primary font-semibold">espaço colaborativo</span>,
+             onde trazemos outros atores do ecossistema para somar conosco e no final termos um impacto escalável 
+             e sistêmico. Queremos <span className="text-accent font-semibold">mais pessoas lendo</span>, 
+             em <span className="text-teal font-semibold">mais lugares</span> e 
+             com isso tendo <span className="text-accent font-semibold">mais oportunidades</span>. Vêm com a gente!
           </p>
         </div>
       </div>
