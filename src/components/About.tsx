@@ -76,7 +76,7 @@ const About = () => {
 
             {/* Culture Tag */}
             <div className="flex flex-wrap gap-3 pt-4">
-              {["Cultura doadora", "Ações regionais", "Impacto nacional"].map((tag) => (
+              {["Cultura leitora", "Ações regionais", "Impacto sistêmico"].map((tag) => (
                 <span
                   key={tag}
                   className="px-4 py-2 bg-accent/10 text-accent rounded-full text-sm font-medium"
