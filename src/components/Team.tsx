@@ -1,4 +1,6 @@
 import { Instagram, Linkedin, Mail } from "lucide-react";
+import adrianePhoto from "@/assets/adriane.jpeg";
+import nelmaPhoto from "@/assets/nelma.jpeg";
 
 const Team = () => {
   const founders = [
@@ -11,7 +13,7 @@ const Team = () => {
       linkedin: "https://www.linkedin.com/in/adrianelaste/",
       instagram: "https://www.instagram.com/nossabibliotecaoficial/",
       email: "adriane@nossabiblioteca.com.br",
-      initials: "AL",
+      photo: adrianePhoto,
       color: "primary",
     },
     {
@@ -23,7 +25,7 @@ const Team = () => {
       linkedin: "https://www.linkedin.com/in/nelmazero/",
       instagram: "https://www.instagram.com/zeroand.co/",
       email: "nelma@zeroand.co",
-      initials: "NZ",
+      photo: nelmaPhoto,
       color: "accent",
     },
   ];
@@ -56,9 +58,11 @@ const Team = () => {
             >
               {/* Avatar Section */}
               <div className={`relative h-48 ${founder.color === 'primary' ? 'gradient-hero' : 'gradient-accent'} flex items-center justify-center flex-shrink-0`}>
-                <div className="w-32 h-32 rounded-full bg-card flex items-center justify-center text-4xl font-display font-bold text-foreground shadow-lg">
-                  {founder.initials}
-                </div>
+                <img 
+                  src={founder.photo} 
+                  alt={founder.name}
+                  className="w-32 h-32 rounded-full object-cover shadow-lg border-4 border-card"
+                />
               </div>
 
               {/* Content */}
