@@ -1,4 +1,4 @@
-import { Heart, ShoppingBag, Megaphone, Calendar } from "lucide-react";
+import { Heart, ShoppingBag, Megaphone, Calendar, Fence, BookText } from "lucide-react";
 
 const Pillars = () => {
   const pillars = [
@@ -46,6 +46,28 @@ const Pillars = () => {
       ],
       color: "mustard",
     },
+    {
+      icon: Fence,
+      title: "Desenvolvimento Territorial",
+      description: "Projetos que promovam a cultura leitora e a educação em territórios determinados, onde o impacto social poderá ser acompanhado e medido.",
+      examples: [
+        "Calendário de datas comemorativas",
+        "Feira Literária de grande porte",
+        "Eventos infantis no Dia das Crianças",
+      ],
+      color: "orange",
+    },
+    {
+      icon: BookText,
+      title: "Campanhas de Incentivo à Leitura",
+      description: "Projetos que usam a força da comunicação para mobilização social em torno dos temas ligados ao incentivo à leitura.",
+      examples: [
+        "Calendário de datas comemorativas",
+        "Feira Literária de grande porte",
+        "Eventos infantis no Dia das Crianças",
+      ],
+      color: "brown",
+    },
   ];
 
   const getColorClasses = (color: string) => {
@@ -54,6 +76,8 @@ const Pillars = () => {
       accent: { bg: "bg-accent/10", text: "text-accent", bgHover: "group-hover:bg-accent" },
       teal: { bg: "bg-teal/10", text: "text-teal", bgHover: "group-hover:bg-teal" },
       mustard: { bg: "bg-mustard/10", text: "text-mustard", bgHover: "group-hover:bg-mustard" },
+      orange: { bg: "bg-orange/10", text: "text-orange", bgHover: "group-hover:bg-orange" },
+      brown: { bg: "bg-brown/10", text: "text-brown", bgHover: "group-hover:bg-brown" },
     };
     return colors[color] || colors.primary;
   };
@@ -73,8 +97,7 @@ const Pillars = () => {
           </h2>
 
           <p className="text-lg text-muted-foreground">
-            Nossos pilares de atuação permitem desenvolver projetos personalizados 
-            que atendem diferentes objetivos de negócio e impacto social.
+            Nossos pilares de atuação permitem desenvolver diferentes tipos de projetos personalizados que atendam os objetivos de negócios, marcas e organizações, promovendo o impacto e a responsabilidade social.
           </p>
         </div>
 
@@ -101,7 +124,7 @@ const Pillars = () => {
                   </div>
                 </div>
 
-                <div className="space-y-3 pl-4 border-l-2 border-muted">
+                {/* <div className="space-y-3 pl-4 border-l-2 border-muted">
                   <p className="text-sm font-medium text-foreground">Exemplos:</p>
                   {pillar.examples.map((example, index) => (
                     <div key={index} className="flex items-center gap-2 text-muted-foreground">
@@ -109,7 +132,7 @@ const Pillars = () => {
                       <span className="text-sm">{example}</span>
                     </div>
                   ))}
-                </div>
+                </div> */}
               </div>
             );
           })}
