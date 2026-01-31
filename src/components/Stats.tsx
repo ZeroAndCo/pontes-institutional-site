@@ -45,79 +45,54 @@ const Stats = () => {
       <div className="container-wide mx-auto">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="inline-block px-4 py-2 bg-white/10 text-white rounded-full text-sm font-medium mb-6">
-            Por que atuamos
-          </span>
+          <span className="inline-block px-4 py-2 bg-white/10 text-white rounded-full text-sm font-medium mb-6">Por que atuamos</span>
 
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-6">
-            A leitura no Brasil precisa de{" "}
-            <span className="text-orange-light">pontes</span>
+            A leitura no Brasil precisa de <span className="text-orange-light">pontes</span>
           </h2>
 
-          <p className="text-lg text-white/80">
-            Os dados mostram a urgência de iniciativas que promovam o acesso e o incentivo à leitura.
-          </p>
+          <p className="text-lg text-white/80">Os dados mostram a urgência de iniciativas que promovam o acesso e o incentivo à leitura. Estas são as necessidades que buscamos trabalhar no hub.</p>
         </div>
 
         {/* Problem Stats Grid */}
         <div className="grid md:grid-cols-3 gap-8 mb-20">
           {problemStats.map((stat) => (
-            <div
-              key={stat.label}
-              className="group p-8 bg-white/10 rounded-2xl backdrop-blur-sm border border-white/10 hover:bg-white/15 transition-all text-center"
-            >
+            <div key={stat.label} className="group p-8 bg-white/10 rounded-2xl backdrop-blur-sm border border-white/10 hover:bg-white/15 transition-all text-center">
               <div className="inline-flex p-4 rounded-full bg-accent/20 text-orange-light mb-6">
                 <stat.icon size={32} />
               </div>
 
-              <div className="text-5xl md:text-6xl font-display font-bold text-white mb-3">
-                {stat.value}
-              </div>
+              <div className="text-5xl md:text-6xl font-display font-bold text-white mb-3">{stat.value}</div>
 
-              <h3 className="text-xl font-semibold text-white mb-2">
-                {stat.label}
-              </h3>
+              <h3 className="text-xl font-semibold text-white mb-2">{stat.label}</h3>
 
-              <p className="text-white/70 text-sm">
-                {stat.detail}
-              </p>
+              <p className="text-white/70 text-sm">{stat.detail}</p>
             </div>
           ))}
         </div>
 
         {/* Source */}
-        <p className="text-center text-white/50 text-sm mb-16">
-          Fonte: 6ª edição da pesquisa Retratos da Leitura no Brasil - Instituto Pró-Livro, 2025
-        </p>
+        <p className="text-center text-white/50 text-sm mb-16">Fonte: 6ª edição da pesquisa Retratos da Leitura no Brasil - Instituto Pró-Livro, 2025</p>
 
         {/* Benefits Section */}
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h3 className="text-2xl md:text-3xl font-display font-bold mb-4">
             Por que a leitura <span className="text-orange-light">transforma</span>
           </h3>
-          <p className="text-white/80">
-            Os benefícios da leitura vão muito além do entretenimento.
-          </p>
+          <p className="text-white/80">Os benefícios da leitura vão muito além do entretenimento.</p>
         </div>
 
         {/* Benefits Grid */}
         <div className="grid md:grid-cols-3 gap-8">
           {benefits.map((benefit) => (
-            <div
-              key={benefit.title}
-              className="group p-8 bg-accent/20 rounded-2xl border border-accent/30 hover:bg-accent/30 transition-all text-center"
-            >
+            <div key={benefit.title} className="group p-8 bg-accent/20 rounded-2xl border border-accent/30 hover:bg-accent/30 transition-all text-center">
               <div className="inline-flex p-4 rounded-full bg-white/10 text-orange-light mb-6">
                 <benefit.icon size={32} />
               </div>
 
-              <h3 className="text-xl font-semibold text-white mb-4">
-                {benefit.title}
-              </h3>
+              <h3 className="text-xl font-semibold text-white mb-4">{benefit.title}</h3>
 
-              <p className="text-white/70 text-sm leading-relaxed">
-                {benefit.description}
-              </p>
+              <p className="text-white/70 text-sm leading-relaxed">{benefit.description}</p>
             </div>
           ))}
         </div>
