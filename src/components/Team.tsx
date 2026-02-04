@@ -89,16 +89,22 @@ const Team = () => {
                 {/* Social Links */}
                 <div className="flex gap-3 mt-auto">
                   <a 
-                    href={founder.instagram} 
+                    href={founder.instagram}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     onClick={() => analytics.socialClick('instagram', founder.name)}
                     className="p-2 rounded-lg bg-muted hover:bg-primary hover:text-primary-foreground transition-colors"
+                    aria-label={`Instagram de ${founder.name}`}
                   >
                     <Instagram size={18} />
                   </a>
                   <a 
-                    href={founder.linkedin} 
+                    href={founder.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     onClick={() => analytics.socialClick('linkedin', founder.name)}
                     className="p-2 rounded-lg bg-muted hover:bg-primary hover:text-primary-foreground transition-colors"
+                    aria-label={`LinkedIn de ${founder.name}`}
                   >
                     <Linkedin size={18} />
                   </a>
@@ -106,6 +112,7 @@ const Team = () => {
                     href={`mailto:${founder.email}`} 
                     onClick={() => analytics.socialClick('email', founder.name)}
                     className="p-2 rounded-lg bg-muted hover:bg-primary hover:text-primary-foreground transition-colors"
+                    aria-label={`Email de ${founder.name}`}
                   >
                     <Mail size={18} />
                   </a>

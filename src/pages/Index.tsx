@@ -21,8 +21,9 @@ const Index = () => {
         <Stats />
         <Pillars />
         <Team />
-        <Testimonials />
-        <Partners />
+        {/* Hidden until we have real data */}
+        {/* <Testimonials /> */}
+        {/* <Partners /> */}
         <Contact />
       </main>
       <Footer />

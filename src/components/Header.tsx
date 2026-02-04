@@ -50,7 +50,10 @@ const Header = () => {
 
           {/* Mobile Menu Button */}
           <button
-            onClick={() => setIsOpen(!isOpen)}
+            onClick={() => {
+              setIsOpen(!isOpen);
+              analytics.mobileMenuToggle(!isOpen);
+            }}
             className="md:hidden p-2 text-foreground"
             aria-label="Toggle menu"
           >

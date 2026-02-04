@@ -1,10 +1,19 @@
+import { useEffect } from "react";
 import { BookOpen, Target, Lightbulb, Users, Building2, Heart, Sparkles, ArrowRight, Mail, MessageCircle, Phone } from "lucide-react";
 import logo from "@/assets/logo.jpeg";
 import { analytics } from "@/lib/analytics";
 
 const Approach = () => {
+  useEffect(() => {
+    analytics.pageView('Approach', '/approach');
+  }, []);
+
   const handleContactClick = (type: string) => {
     analytics.contactClick(type);
+  };
+
+  const handleWhatsAppClick = () => {
+    analytics.whatsappClick('approach_cta');
   };
 
   return (
@@ -393,7 +402,10 @@ const Approach = () => {
               href="https://wa.me/5511994066732?text=Olá! Gostaria de saber mais sobre o Pontes para Leitura."
               target="_blank"
               rel="noopener noreferrer"
-              onClick={() => handleContactClick('WhatsApp')}
+              onClick={() => {
+                handleContactClick('WhatsApp');
+                handleWhatsAppClick();
+              }}
               className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-lg transition-all hover:scale-105 shadow-lg"
             >
               <MessageCircle className="w-5 h-5" />
