@@ -23,7 +23,7 @@ const Approach = () => {
             Pontes para Leitura
           </h1>
           <p className="text-2xl md:text-3xl text-orange-light font-display font-semibold mb-8">
-            Approach
+            Nossa Proposta
           </p>
           <p className="text-lg text-cream/80 max-w-xl mx-auto">
             Co-Idealizadores: Adriane Laste (Click) e Nelma Zero (Zero&Co)
@@ -390,7 +390,7 @@ const Approach = () => {
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="https://wa.me/5511999999999?text=Olá! Gostaria de saber mais sobre o Pontes para Leitura."
+              href="https://wa.me/5511994066732?text=Olá! Gostaria de saber mais sobre o Pontes para Leitura."
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => handleContactClick('WhatsApp')}
@@ -415,7 +415,7 @@ const Approach = () => {
               className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-white/10 hover:bg-white/20 text-white border-2 border-white/30 font-semibold rounded-lg transition-all"
             >
               <Phone className="w-5 h-5" />
-              Formulário de Contato
+              Fale Conosco
             </a>
           </div>
         </div>
