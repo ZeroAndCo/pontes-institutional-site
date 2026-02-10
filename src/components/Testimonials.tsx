@@ -6,32 +6,22 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { Book, Quote } from "lucide-react";
+import marciaPhoto from "@/assets/marcia_wada.jpeg";
+import katiaPhoto from "@/assets/katia_chiaradia.jpeg";
 
 const Testimonials = () => {
   const testimonials = [
     {
-      name: "Maria Silva",
-      role: "Educadora",
-      photo: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop&crop=face",
-      testimonial: "A leitura transformou minha vida e a de meus alunos. Cada livro é uma janela para um mundo novo, uma oportunidade de crescimento e empatia.",
-      bookSuggestion: "O Pequeno Príncipe",
-      bookAuthor: "Antoine de Saint-Exupéry",
+      name: "Márcia Wada",
+      photo: marciaPhoto,
+      testimonial: "A leitura de livros literários pode modificar a forma de participação no mundo. Quando esse contato acontece de forma espontânea e significativa, a leitura se torna uma experiência marcante. Ela pode despertar o interesse, ampliar conhecimentos, toca sentimentos e ressignifica crenças, fortalecendo o sentimento de pertencimento e participação ativa na vida social. Assim aconteceu com os inúmeros adolescentes, jovens e educadores participantes de projeto de mediação de leitura de histórias",
+      bookSuggestion: "Primavera",
     },
     {
-      name: "João Santos",
-      role: "Bibliotecário",
-      photo: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face",
-      testimonial: "Ver crianças descobrindo o prazer da leitura é a maior recompensa do meu trabalho. Livros constroem pontes entre gerações e culturas.",
-      bookSuggestion: "A Bolsa Amarela",
-      bookAuthor: "Lygia Bojunga",
-    },
-    {
-      name: "Ana Costa",
-      role: "Voluntária",
-      photo: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&h=200&fit=crop&crop=face",
-      testimonial: "Participar de projetos de leitura me mostrou o poder transformador da educação. Um livro pode mudar o destino de uma criança.",
-      bookSuggestion: "Meu Pé de Laranja Lima",
-      bookAuthor: "José Mauro de Vasconcelos",
+      name: "Kátia Chiaradia",
+      photo: katiaPhoto,
+      testimonial: "Ler é entrar num pacto de confiança grupal e mútua, portanto, um exercício social: o autor confia no leitor, e o leitor, que confia no texto, aceita se perder um pouco para descobrir (outros) caminhos. Isso me lembra, todos os dias, por que escolhi trabalhar com literatura para crianças e adolescentes: porque eles são um território de liberdade, de pensamento e de invenção do mundo.",
+      bookSuggestion: "Passagem secreta",
     },
   ];
 
@@ -89,7 +79,6 @@ const Testimonials = () => {
                           <p className="font-display font-bold text-foreground text-lg">
                             {item.name}
                           </p>
-                          <p className="text-muted-foreground">{item.role}</p>
                         </div>
 
                         {/* Book Suggestion */}
@@ -98,10 +87,7 @@ const Testimonials = () => {
                           <div className="text-left">
                             <p className="text-sm text-muted-foreground">Indicação de leitura:</p>
                             <p className="font-medium text-foreground">
-                              {item.bookSuggestion}{" "}
-                              <span className="text-muted-foreground font-normal">
-                                — {item.bookAuthor}
-                              </span>
+                              {item.bookSuggestion}
                             </p>
                           </div>
                         </div>
