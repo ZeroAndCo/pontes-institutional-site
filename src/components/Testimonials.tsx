@@ -2,6 +2,7 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 import { Book, Quote } from "lucide-react";
 import marciaPhoto from "@/assets/marcia_wada.jpeg";
 import katiaPhoto from "@/assets/katia_chiaradia.jpeg";
+import neliPhoto from "@/assets/neli_miotto.jpeg";
 
 const Testimonials = () => {
   const testimonials = [
@@ -22,6 +23,15 @@ const Testimonials = () => {
         "Ler é entrar num pacto de confiança grupal e mútua, portanto, um exercício social: o autor confia no leitor, e o leitor, que confia no texto, aceita se perder um pouco para descobrir (outros) caminhos. Isso me lembra, todos os dias, por que escolhi trabalhar com literatura para crianças e adolescentes: porque eles são um território de liberdade, de pensamento e de invenção do mundo.",
       bookSuggestion: "Passagem secreta",
       bookAuthor: "Mac Barnett",
+    },
+    {
+      name: "Neli Miotto",
+      role: "Curadora",
+      photo: neliPhoto,
+      testimonial:
+        "Ter a leitura como missão de vida e o propósito de oferecer a outras pessoas a oportunidade de desfrutar, desvendar e descortinar histórias, enredos, personagens e novas possibilidades para a vida cotidiana enobrece ainda mais o viver.",
+      bookSuggestion: "Princesa - A Historia Real Da Vida Das Mulheres Árabes por trás de seus negros véus",
+      bookAuthor: "Jean P. Sasson",
     },
   ];
 
