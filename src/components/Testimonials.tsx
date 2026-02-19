@@ -1,4 +1,5 @@
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 import { Book, Quote } from "lucide-react";
 import marciaPhoto from "@/assets/marcia_wada.jpeg";
 import katiaPhoto from "@/assets/katia_chiaradia.jpeg";
@@ -56,6 +57,7 @@ const Testimonials = () => {
               align: "center",
               loop: true,
             }}
+            plugins={[Autoplay({ delay: 8000, stopOnInteraction: true })]}
             className="w-full"
           >
             <CarouselContent>
