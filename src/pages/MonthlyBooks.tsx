@@ -12,6 +12,7 @@ import {
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import booksData from "@/data/monthly-books.json";
+import { analytics, trackEvent } from "@/lib/analytics";
 
 const PASSWORD = "pontes2026";
 const SESSION_KEY = "pontes-livros-auth";
@@ -67,6 +68,10 @@ function ThemeCard({ theme, description }: { theme: string; description: string 
 function BookCard({ book }: { book: Book }) {
   const hasLink = book.amazonUrl.length > 0;
 
+  const handleBuyClick = () => {
+    analytics.externalLink(book.amazonUrl, `Comprar: ${book.title}`);
+  };
+
   return (
     <Card className="overflow-hidden border-border/60 bg-card hover:shadow-lg transition-all duration-300 group">
       <CardHeader className="pb-3">
@@ -118,7 +123,7 @@ function BookCard({ book }: { book: Book }) {
 
         {hasLink ? (
           <Button asChild className="w-full gap-2 gradient-accent border-0 text-primary-foreground hover:opacity-90">
-            <a href={book.amazonUrl} target="_blank" rel="noopener noreferrer">
+            <a href={book.amazonUrl} target="_blank" rel="noopener noreferrer" onClick={handleBuyClick}>
               <ShoppingCart className="h-4 w-4" />
               Comprar na Amazon
             </a>
@@ -142,8 +147,10 @@ function PasswordGate({ onUnlock }: { onUnlock: () => void }) {
     e.preventDefault();
     if (password === PASSWORD) {
       sessionStorage.setItem(SESSION_KEY, "true");
+      trackEvent("password_unlock", { page: "livros-do-mes" });
       onUnlock();
     } else {
+      trackEvent("password_failed", { page: "livros-do-mes" });
       setError(true);
     }
   };
@@ -193,6 +200,14 @@ export default function MonthlyBooks() {
     if (sessionStorage.getItem(SESSION_KEY) === "true") {
       setAuthenticated(true);
     }
+  }, []);
+
+  useEffect(() => {
+    document.title = "Livros do Mês | Pontes para Leitura";
+    analytics.pageView("Livros do Mês", "/livros-do-mes");
+    return () => {
+      document.title = "Pontes para Leitura | Hub de Incentivo à Leitura";
+    };
   }, []);
 
   if (!authenticated) {
@@ -253,7 +268,7 @@ export default function MonthlyBooks() {
               <h2 className="text-xl font-semibold mb-4 text-foreground/70">
                 Meses anteriores
               </h2>
-              <Accordion type="single" collapsible>
+              <Accordion type="single" collapsible onValueChange={(val) => val && analytics.sectionView(`archive_${val}`)}>
                 {past.map((entry) => (
                   <AccordionItem key={entry.month} value={entry.month}>
                     <AccordionTrigger className="text-base">
