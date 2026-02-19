@@ -1,8 +1,12 @@
 import { Heart } from "lucide-react";
+import { useLocation } from "react-router-dom";
 import logo from "@/assets/logo.jpeg";
 import { analytics } from "@/lib/analytics";
 
 const Footer = () => {
+  const location = useLocation();
+  const isHome = location.pathname === "/" || location.pathname === "";
+
   const footerLinks = [
     { href: "#sobre", label: "Sobre" },
     { href: "#como-atuamos", label: "Como Atuamos" },
@@ -11,17 +15,21 @@ const Footer = () => {
     { href: "#contato", label: "Contato" },
   ];
 
+  const getHref = (hash: string) => (isHome ? hash : `/${hash}`);
+
   return (
     <footer className="bg-brown text-cream py-12">
       <div className="container-wide mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
           {/* Logo & Mission */}
           <div className="flex items-center gap-4">
-            <img
-              src={logo}
-              alt="Pontes para Leitura"
-              className="h-16 w-16 rounded-full object-cover"
-            />
+            <a href="/">
+              <img
+                src={logo}
+                alt="Pontes para Leitura"
+                className="h-16 w-16 rounded-full object-cover"
+              />
+            </a>
             <div>
               <h3 className="font-display font-bold text-xl">Pontes para Leitura</h3>
               <p className="text-cream/70 text-sm">Hub de Incentivo à Leitura</p>
@@ -33,7 +41,7 @@ const Footer = () => {
             {footerLinks.map((link) => (
               <a 
                 key={link.href}
-                href={link.href} 
+                href={getHref(link.href)} 
                 onClick={() => analytics.navClick(`footer_${link.label}`)}
                 className="hover:text-cream transition-colors"
               >

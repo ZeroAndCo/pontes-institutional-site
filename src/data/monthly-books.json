@@ -2,6 +2,8 @@
   {
     "month": "2026-02",
     "label": "Fevereiro 2026",
+    "theme": "Transformação Pessoal",
+    "themeDescription": "Neste mês, selecionamos leituras que inspiram mudanças de dentro para fora — desde hábitos matinais até a educação como caminho de liberdade.",
     "books": [
       {
         "title": "O Milagre da Manhã",
@@ -11,7 +13,8 @@
         "suggestedBy": "Equipe Pontes",
         "suggestionReason": "Leitura inspiradora para começar o ano com novos hábitos e motivação para a transformação pessoal.",
         "amazonUrl": "",
-        "coverUrl": "https://m.media-amazon.com/images/I/51Ibe9vM7BL._SY445_SX342_.jpg"
+        "coverUrl": "https://m.media-amazon.com/images/I/51Ibe9vM7BL._SY445_SX342_.jpg",
+        "categories": ["Desenvolvimento Pessoal", "Produtividade"]
       },
       {
         "title": "Educação como Prática da Liberdade",
@@ -21,13 +24,16 @@
         "suggestedBy": "Equipe Pontes",
         "suggestionReason": "Essencial para entender a educação como ferramenta de mudança, alinhado com a missão do Pontes para Leitura.",
         "amazonUrl": "",
-        "coverUrl": "https://m.media-amazon.com/images/I/61xBSIb2loL._SY445_SX342_.jpg"
+        "coverUrl": "https://m.media-amazon.com/images/I/61xBSIb2loL._SY445_SX342_.jpg",
+        "categories": ["Educação", "Sociedade"]
       }
     ]
   },
   {
     "month": "2026-01",
     "label": "Janeiro 2026",
+    "theme": "Novos Começos",
+    "themeDescription": "Para abrir o ano, escolhemos livros que falam sobre o poder de recomeçar — seja através de novos hábitos ou de vozes que merecem ser ouvidas.",
     "books": [
       {
         "title": "O Poder do Hábito",
@@ -37,7 +43,8 @@
         "suggestedBy": "Equipe Pontes",
         "suggestionReason": "Ótima leitura para refletir sobre rotinas e como pequenas mudanças podem gerar grandes impactos.",
         "amazonUrl": "",
-        "coverUrl": "https://m.media-amazon.com/images/I/51Tlm0GZTXL._SY445_SX342_.jpg"
+        "coverUrl": "https://m.media-amazon.com/images/I/51Tlm0GZTXL._SY445_SX342_.jpg",
+        "categories": ["Psicologia", "Comportamento"]
       },
       {
         "title": "Quarto de Despejo",
@@ -47,7 +54,8 @@
         "suggestedBy": "Equipe Pontes",
         "suggestionReason": "Um clássico da literatura brasileira que nos conecta com a realidade de quem mais precisa de pontes para um futuro melhor.",
         "amazonUrl": "",
-        "coverUrl": "https://m.media-amazon.com/images/I/61ebqMfcGzL._SY445_SX342_.jpg"
+        "coverUrl": "https://m.media-amazon.com/images/I/61ebqMfcGzL._SY445_SX342_.jpg",
+        "categories": ["Literatura Brasileira", "Autobiografia"]
       }
     ]
   }
