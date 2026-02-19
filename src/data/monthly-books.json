@@ -1,0 +1,50 @@
+[
+  {
+    "month": "2026-02",
+    "label": "Fevereiro 2026",
+    "books": [
+      {
+        "title": "O Milagre da Manhã",
+        "author": "Hal Elrod",
+        "publisher": "Editora BestSeller",
+        "description": "Um guia prático sobre como transformar sua vida dedicando as primeiras horas do dia ao desenvolvimento pessoal.",
+        "suggestedBy": "Equipe Pontes",
+        "suggestionReason": "Leitura inspiradora para começar o ano com novos hábitos e motivação para a transformação pessoal.",
+        "amazonUrl": ""
+      },
+      {
+        "title": "Educação como Prática da Liberdade",
+        "author": "Paulo Freire",
+        "publisher": "Paz e Terra",
+        "description": "Paulo Freire apresenta sua visão de educação como instrumento de conscientização e transformação social.",
+        "suggestedBy": "Equipe Pontes",
+        "suggestionReason": "Essencial para entender a educação como ferramenta de mudança, alinhado com a missão do Pontes para Leitura.",
+        "amazonUrl": ""
+      }
+    ]
+  },
+  {
+    "month": "2026-01",
+    "label": "Janeiro 2026",
+    "books": [
+      {
+        "title": "O Poder do Hábito",
+        "author": "Charles Duhigg",
+        "publisher": "Objetiva",
+        "description": "Uma investigação fascinante sobre como os hábitos funcionam e como podem ser transformados.",
+        "suggestedBy": "Equipe Pontes",
+        "suggestionReason": "Ótima leitura para refletir sobre rotinas e como pequenas mudanças podem gerar grandes impactos.",
+        "amazonUrl": ""
+      },
+      {
+        "title": "Quarto de Despejo",
+        "author": "Carolina Maria de Jesus",
+        "publisher": "Ática",
+        "description": "Diário de uma mulher que vivia na favela do Canindé, em São Paulo, retratando a dura realidade da pobreza no Brasil.",
+        "suggestedBy": "Equipe Pontes",
+        "suggestionReason": "Um clássico da literatura brasileira que nos conecta com a realidade de quem mais precisa de pontes para um futuro melhor.",
+        "amazonUrl": ""
+      }
+    ]
+  }
+]
