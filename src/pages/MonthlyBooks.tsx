@@ -9,6 +9,8 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import booksData from "@/data/monthly-books.json";
 
 const PASSWORD = "pontes2026";
@@ -22,6 +24,7 @@ interface Book {
   suggestedBy: string;
   suggestionReason: string;
   amazonUrl: string;
+  coverUrl?: string;
 }
 
 interface MonthEntry {
@@ -34,11 +37,23 @@ function BookCard({ book }: { book: Book }) {
   const hasLink = book.amazonUrl.length > 0;
 
   return (
-    <Card className="overflow-hidden border-border/60 bg-card">
+    <Card className="overflow-hidden border-border/60 bg-card hover:shadow-md transition-shadow">
       <CardHeader className="pb-3">
         <div className="flex items-start gap-4">
-          <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-lg bg-primary/10">
-            <BookOpen className="h-7 w-7 text-primary" />
+          {/* Book cover */}
+          <div className="shrink-0 w-20 h-28 rounded-md overflow-hidden bg-secondary shadow-sm">
+            {book.coverUrl ? (
+              <img
+                src={book.coverUrl}
+                alt={`Capa: ${book.title}`}
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
+            ) : (
+              <div className="flex h-full w-full items-center justify-center bg-primary/10">
+                <BookOpen className="h-8 w-8 text-primary/50" />
+              </div>
+            )}
           </div>
           <div className="min-w-0">
             <CardTitle className="text-lg leading-snug">{book.title}</CardTitle>
@@ -151,63 +166,72 @@ export default function MonthlyBooks() {
   const [current, ...past] = sorted;
 
   return (
-    <div className="min-h-screen bg-background">
-      {/* Header */}
-      <header className="section-padding pb-8 md:pb-12">
+    <div className="min-h-screen bg-background flex flex-col">
+      <Header />
+
+      {/* Hero banner */}
+      <section className="gradient-hero text-primary-foreground pt-28 pb-12 md:pt-32 md:pb-16 px-6">
         <div className="container-narrow">
-          <div className="flex items-center gap-3 mb-2">
-            <BookOpen className="h-8 w-8 text-primary" />
-            <h1 className="text-3xl md:text-4xl">Livros do Mês</h1>
+          <div className="flex items-center gap-3 mb-3">
+            <BookOpen className="h-8 w-8" />
+            <h1 className="text-3xl md:text-4xl text-primary-foreground">
+              Livros do Mês
+            </h1>
           </div>
-          <p className="text-muted-foreground max-w-2xl">
+          <p className="text-primary-foreground/80 max-w-2xl text-lg">
             Sugestões de leitura selecionadas com carinho pela equipe e
             colaboradores do Pontes para Leitura.
           </p>
         </div>
-      </header>
+      </section>
 
       {/* Current month */}
-      {current && (
-        <section className="px-6 pb-12 md:px-8 lg:px-12">
-          <div className="container-narrow">
-            <h2 className="text-xl font-semibold mb-6 text-primary">
-              {current.label}
-            </h2>
-            <div className="grid gap-6 sm:grid-cols-2">
-              {current.books.map((book) => (
-                <BookCard key={book.title} book={book} />
-              ))}
+      <main className="flex-1">
+        {current && (
+          <section className="section-padding pb-8 md:pb-12">
+            <div className="container-narrow">
+              <h2 className="text-2xl font-semibold mb-8 text-primary flex items-center gap-2">
+                <span className="inline-block w-1.5 h-8 rounded-full bg-accent" />
+                {current.label}
+              </h2>
+              <div className="grid gap-6 sm:grid-cols-2">
+                {current.books.map((book) => (
+                  <BookCard key={book.title} book={book} />
+                ))}
+              </div>
             </div>
-          </div>
-        </section>
-      )}
+          </section>
+        )}
 
-      {/* Archive */}
-      {past.length > 0 && (
-        <section className="px-6 pb-16 md:px-8 lg:px-12">
-          <div className="container-narrow">
-            <h2 className="text-xl font-semibold mb-4 text-foreground/70">
-              Meses anteriores
-            </h2>
-            <Accordion type="single" collapsible>
-              {past.map((entry) => (
-                <AccordionItem key={entry.month} value={entry.month}>
-                  <AccordionTrigger className="text-base">
-                    {entry.label}
-                  </AccordionTrigger>
-                  <AccordionContent>
-                    <div className="grid gap-6 pt-2 sm:grid-cols-2">
-                      {entry.books.map((book) => (
-                        <BookCard key={book.title} book={book} />
-                      ))}
-                    </div>
-                  </AccordionContent>
-                </AccordionItem>
-              ))}
-            </Accordion>
-          </div>
-        </section>
-      )}
+        {/* Archive */}
+        {past.length > 0 && (
+          <section className="px-6 pb-16 md:px-8 lg:px-12">
+            <div className="container-narrow">
+              <h2 className="text-xl font-semibold mb-4 text-foreground/70">
+                Meses anteriores
+              </h2>
+              <Accordion type="single" collapsible>
+                {past.map((entry) => (
+                  <AccordionItem key={entry.month} value={entry.month}>
+                    <AccordionTrigger className="text-base">
+                      {entry.label}
+                    </AccordionTrigger>
+                    <AccordionContent>
+                      <div className="grid gap-6 pt-2 sm:grid-cols-2">
+                        {entry.books.map((book) => (
+                          <BookCard key={book.title} book={book} />
+                        ))}
+                      </div>
+                    </AccordionContent>
+                  </AccordionItem>
+                ))}
+              </Accordion>
+            </div>
+          </section>
+        )}
+      </main>
+
+      <Footer />
     </div>
   );
 }

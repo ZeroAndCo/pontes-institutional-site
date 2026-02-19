@@ -1,10 +1,13 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { useLocation } from "react-router-dom";
 import logo from "@/assets/logo.jpeg";
 import { analytics } from "@/lib/analytics";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
+  const isHome = location.pathname === "/" || location.pathname === "";
 
   const navLinks = [
     { href: "#sobre", label: "Sobre" },
@@ -13,6 +16,8 @@ const Header = () => {
     { href: "#equipe", label: "Equipe" },
     { href: "#contato", label: "Contato" },
   ];
+
+  const getHref = (hash: string) => (isHome ? hash : `/${hash}`);
 
   const handleNavClick = (section: string) => {
     analytics.navClick(section);
@@ -23,7 +28,7 @@ const Header = () => {
       <div className="container-wide mx-auto px-6">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-3">
+          <a href="/" className="flex items-center gap-3">
             <img
               src={logo}
               alt="Pontes para Leitura"
@@ -39,7 +44,7 @@ const Header = () => {
             {navLinks.map((link) => (
               <a
                 key={link.href}
-                href={link.href}
+                href={getHref(link.href)}
                 onClick={() => handleNavClick(link.label)}
                 className="text-orange hover:text-orange-dark transition-colors font-medium"
               >
@@ -67,7 +72,7 @@ const Header = () => {
             {navLinks.map((link) => (
               <a
                 key={link.href}
-                href={link.href}
+                href={getHref(link.href)}
                 onClick={() => {
                   setIsOpen(false);
                   handleNavClick(link.label);
