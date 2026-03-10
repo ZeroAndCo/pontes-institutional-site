@@ -52,6 +52,16 @@ export const analytics = {
     trackEvent('external_link_click', { url, label });
   },
 
+  // Monthly Books Amazon CTA
+  monthlyBookBuyClick: (bookTitle: string, month: string, url: string) => {
+    trackEvent('monthly_book_buy_click', {
+      book_title: bookTitle,
+      month,
+      url,
+      page: 'livros-do-mes',
+    });
+  },
+
   // Scroll depth
   scrollDepth: (percentage: number) => {
     trackEvent('scroll_depth', { percentage });

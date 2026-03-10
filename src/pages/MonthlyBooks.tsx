@@ -73,10 +73,11 @@ function ThemeCard({ theme, description }: { theme: string; description: string 
   );
 }
 
-function BookCard({ book }: { book: Book }) {
+function BookCard({ book, month }: { book: Book; month: string }) {
   const hasLink = book.amazonUrl.length > 0;
 
   const handleBuyClick = () => {
+    analytics.monthlyBookBuyClick(book.title, month, book.amazonUrl);
     analytics.externalLink(book.amazonUrl, `Comprar: ${book.title}`);
   };
 
@@ -243,7 +244,7 @@ export default function MonthlyBooks() {
 
               <div className="grid gap-6 sm:grid-cols-2">
                 {current.books.map((book) => (
-                  <BookCard key={book.title} book={book} />
+                  <BookCard key={book.title} book={book} month={current.month} />
                 ))}
               </div>
             </div>
@@ -276,7 +277,7 @@ export default function MonthlyBooks() {
                       {entry.theme && entry.themeDescription && <ThemeCard theme={entry.theme} description={entry.themeDescription} />}
                       <div className="grid gap-6 pt-2 sm:grid-cols-2">
                         {entry.books.map((book) => (
-                          <BookCard key={book.title} book={book} />
+                          <BookCard key={book.title} book={book} month={entry.month} />
                         ))}
                       </div>
                     </AccordionContent>
