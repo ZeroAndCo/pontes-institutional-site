@@ -1,5 +1,525 @@
 [
   {
+    "month": "2026-12",
+    "label": "Dezembro 2026",
+    "theme": "Reflexão e Humanidade",
+    "themeDescription": "Em dezembro, reunimos livros voltados à interioridade, à ética, ao sentido da vida e às perguntas humanas mais duradouras, fechando o ano com leituras que convidam à pausa e à elaboração.",
+    "books": [
+      {
+        "title": "Cartas a um jovem poeta",
+        "author": "Rainer Maria Rilke",
+        "publisher": "Globo Livros",
+        "description": "Conjunto de cartas em que Rilke reflete sobre criação, solidão, amadurecimento, arte e vida interior.",
+        "suggestedBy": "Equipe Pontes",
+        "suggestionReason": "É um livro curto, intenso e muito generoso com o leitor, excelente para encerrar o ano com uma leitura contemplativa e inspiradora.",
+        "amazonUrl": "https://www.amazon.com.br/Cartas-Jovem-Poeta-Outros-Textos/dp/8525053503",
+        "coverUrl": "https://m.media-amazon.com/images/P/8525053503.jpg",
+        "categories": ["Reflexão", "Literatura"]
+      },
+      {
+        "title": "Meditações",
+        "author": "Marco Aurélio",
+        "publisher": "Edipro",
+        "description": "Registro de pensamentos do imperador filósofo sobre autocontrole, virtude, impermanência e vida ética.",
+        "suggestedBy": "Equipe Pontes",
+        "suggestionReason": "A obra traz uma filosofia prática surpreendentemente atual e oferece ao leitor um fechamento de ano orientado por reflexão, sobriedade e clareza.",
+        "amazonUrl": "https://www.amazon.com.br/Medita%C3%A7%C3%B5es-Marco-Aur%C3%A9lio/dp/6555480726",
+        "coverUrl": "https://m.media-amazon.com/images/P/6555480726.jpg",
+        "categories": ["Filosofia", "Estoicismo"]
+      },
+      {
+        "title": "Em busca de sentido",
+        "author": "Viktor E. Frankl",
+        "publisher": "Vozes",
+        "description": "Relato sobre a experiência do autor nos campos de concentração e sua elaboração da busca de sentido como força humana fundamental.",
+        "suggestedBy": "Equipe Pontes",
+        "suggestionReason": "É uma leitura profunda, transformadora e extremamente humana, capaz de tocar leitores de diferentes trajetórias com uma mensagem de dignidade e propósito.",
+        "amazonUrl": "https://www.amazon.com.br/Em-Busca-Sentido-psic%C3%B3logo-concentra%C3%A7%C3%A3o/dp/8532606261",
+        "coverUrl": "https://m.media-amazon.com/images/P/8532606261.jpg",
+        "categories": ["Psicologia", "Reflexão"]
+      },
+      {
+        "title": "A arte da felicidade",
+        "author": "Dalai Lama",
+        "publisher": "Martins Fontes",
+        "description": "Reflexões sobre felicidade, compaixão e vida prática em um diálogo entre espiritualidade e experiência cotidiana.",
+        "suggestedBy": "Equipe Pontes",
+        "suggestionReason": "Fecha a seleção com um convite à serenidade e à escuta interior, reforçando um eixo de leitura humanista e acessível para diferentes perfis de leitores.",
+        "amazonUrl": "https://www.amazon.com.br/Arte-Felicidade-manual-para-vida/dp/853361201X",
+        "coverUrl": "https://m.media-amazon.com/images/P/853361201X.jpg",
+        "categories": ["Espiritualidade", "Reflexão"]
+      }
+    ]
+  },
+  {
+    "month": "2026-11",
+    "label": "Novembro 2026",
+    "theme": "História",
+    "themeDescription": "Em novembro, a leitura se volta para obras que ajudam a compreender o passado e suas permanências, conectando acontecimentos históricos, formação social e memória coletiva a debates ainda vivos no presente.",
+    "books": [
+      {
+        "title": "O diário de Anne Frank",
+        "author": "Anne Frank",
+        "publisher": "Record",
+        "description": "Relato histórico e humano sobre os anos em que Anne e sua família viveram escondidos durante o regime nazista.",
+        "suggestedBy": "Equipe Pontes",
+        "suggestionReason": "É uma obra essencial para aproximar leitores da memória do Holocausto por meio de uma voz íntima, jovem e profundamente comovente.",
+        "amazonUrl": "https://www.amazon.com.br/di%C3%A1rio-Anne-Frank-edi%C3%A7%C3%A3o-capa/dp/8501068209",
+        "coverUrl": "https://m.media-amazon.com/images/P/8501068209.jpg",
+        "categories": ["História", "Memória"]
+      },
+      {
+        "title": "SPQR",
+        "author": "Mary Beard",
+        "publisher": "Planeta",
+        "description": "Panorama amplo da Roma antiga, apresentado com rigor histórico e linguagem acessível por uma das maiores historiadoras do tema.",
+        "suggestedBy": "Equipe Pontes",
+        "suggestionReason": "O livro mostra como a história pode ser sofisticada e ao mesmo tempo muito legível, ampliando o repertório dos leitores para além do eixo escolar mais tradicional.",
+        "amazonUrl": "https://www.amazon.com.br/SPQR-Mary-Beard/dp/8542209400",
+        "coverUrl": "https://m.media-amazon.com/images/P/8542209400.jpg",
+        "categories": ["História", "Antiguidade"]
+      },
+      {
+        "title": "Armas, germes e aço",
+        "author": "Jared Diamond",
+        "publisher": "Record",
+        "description": "Obra de grande alcance que investiga por que sociedades humanas se desenvolveram de formas tão desiguais ao longo da história.",
+        "suggestedBy": "Equipe Pontes",
+        "suggestionReason": "É uma leitura que combina história global, ciência e interpretação de longa duração, enriquecendo bastante uma curadoria voltada à compreensão do mundo.",
+        "amazonUrl": "https://www.amazon.com.br/Armas-germes-a%C3%A7o-Jared-Diamond/dp/8501110019",
+        "coverUrl": "https://m.media-amazon.com/images/P/8501110019.jpg",
+        "categories": ["História", "Ciência"]
+      },
+      {
+        "title": "O povo brasileiro",
+        "author": "Darcy Ribeiro",
+        "publisher": "Global",
+        "description": "Ensaio fundamental sobre a formação histórica, cultural e social do Brasil, escrito por um dos grandes intérpretes do país.",
+        "suggestedBy": "Equipe Pontes",
+        "suggestionReason": "A obra é central para qualquer projeto que queira pensar identidade brasileira, desigualdade, diversidade e nação com profundidade e linguagem vigorosa.",
+        "amazonUrl": "https://www.amazon.com.br/Povo-Brasileiro-Forma%C3%A7%C3%A3o-Sentido-Brasil/dp/8526022253",
+        "coverUrl": "https://m.media-amazon.com/images/P/8526022253.jpg",
+        "categories": ["História", "Brasil"]
+      }
+    ]
+  },
+  {
+    "month": "2026-10",
+    "label": "Outubro 2026",
+    "theme": "Mistério",
+    "themeDescription": "Outubro é dedicado a histórias que intrigam, desestabilizam certezas e convidam o leitor a montar peças, suspeitar de versões e seguir pistas narrativas até o fim.",
+    "books": [
+      {
+        "title": "O assassinato no Expresso do Oriente",
+        "author": "Agatha Christie",
+        "publisher": "HarperCollins",
+        "description": "Clássico do mistério protagonizado por Hercule Poirot, ambientado em uma viagem onde todos parecem esconder alguma coisa.",
+        "suggestedBy": "Equipe Pontes",
+        "suggestionReason": "Agatha Christie é uma referência incontornável do gênero e este título é ideal para atrair leitores que buscam leitura envolvente e ritmo forte.",
+        "amazonUrl": "https://www.amazon.com.br/Assassinato-no-Expresso-do-Oriente/dp/8595086788",
+        "coverUrl": "https://m.media-amazon.com/images/P/8595086788.jpg",
+        "categories": ["Mistério", "Clássico"]
+      },
+      {
+        "title": "Um estudo em vermelho",
+        "author": "Arthur Conan Doyle",
+        "publisher": "Martin Claret",
+        "description": "Primeiro romance com Sherlock Holmes, unindo investigação, lógica, observação e um enigma marcante.",
+        "suggestedBy": "Equipe Pontes",
+        "suggestionReason": "A obra apresenta um dos personagens mais emblemáticos da literatura policial e ajuda a compor uma seleção que dialoga com a origem do gênero.",
+        "amazonUrl": "https://www.amazon.com.br/Estudo-Vermelho-Arthur-Conan-Doyle/dp/8544001939",
+        "coverUrl": "https://m.media-amazon.com/images/P/8544001939.jpg",
+        "categories": ["Mistério", "Clássico"]
+      },
+      {
+        "title": "Garota exemplar",
+        "author": "Gillian Flynn",
+        "publisher": "Intrínseca",
+        "description": "Thriller psicológico de narrativa tensa e múltiplas camadas, centrado em um desaparecimento e em um casamento cheio de fissuras.",
+        "suggestedBy": "Equipe Pontes",
+        "suggestionReason": "Incluímos o livro para equilibrar clássicos e suspense contemporâneo, mostrando como o mistério também pode operar por ambiguidade psicológica e crítica social.",
+        "amazonUrl": "https://www.amazon.com.br/Garota-Exemplar-Gillian-Flynn/dp/8580572908",
+        "coverUrl": "https://m.media-amazon.com/images/P/8580572908.jpg",
+        "categories": ["Thriller", "Mistério"]
+      },
+      {
+        "title": "O silêncio dos inocentes",
+        "author": "Thomas Harris",
+        "publisher": "Record",
+        "description": "Suspense policial intenso em que a investigação de crimes brutais se cruza com o confronto psicológico entre perseguidor e investigadora.",
+        "suggestedBy": "Equipe Pontes",
+        "suggestionReason": "A seleção ganha densidade e tensão com um título muito conhecido, capaz de atrair leitores que gostam de narrativas sombrias e altamente envolventes.",
+        "amazonUrl": "https://www.amazon.com.br/sil%C3%AAncio-dos-inocentes-Thomas-Harris/dp/850111362X",
+        "coverUrl": "https://m.media-amazon.com/images/P/850111362X.jpg",
+        "categories": ["Suspense", "Mistério"]
+      }
+    ]
+  },
+  {
+    "month": "2026-09",
+    "label": "Setembro 2026",
+    "theme": "Aventura",
+    "themeDescription": "Setembro reúne histórias de jornada, descoberta, risco e movimento, ideais para leitores que gostam de narrativas guiadas por deslocamento, superação, curiosidade e desejo de explorar o desconhecido.",
+    "books": [
+      {
+        "title": "A volta ao mundo em 80 dias",
+        "author": "Jules Verne",
+        "publisher": "Companhia das Letras",
+        "description": "Clássico de aventura sobre uma aposta improvável que se transforma em uma corrida cheia de obstáculos e descobertas pelo mundo.",
+        "suggestedBy": "Equipe Pontes",
+        "suggestionReason": "É uma aventura ágil, divertida e clássica, ótima para mostrar como a literatura pode ser ao mesmo tempo formadora e altamente envolvente.",
+        "amazonUrl": "https://www.amazon.com.br/volta-mundo-80-dias/dp/8594318146",
+        "coverUrl": "https://m.media-amazon.com/images/P/8594318146.jpg",
+        "categories": ["Aventura", "Clássico"]
+      },
+      {
+        "title": "Robinson Crusoé",
+        "author": "Daniel Defoe",
+        "publisher": "Martin Claret",
+        "description": "Romance clássico de sobrevivência e isolamento sobre um náufrago obrigado a reconstruir a vida em uma ilha deserta.",
+        "suggestedBy": "Equipe Pontes",
+        "suggestionReason": "A obra amplia o repertório de aventura com um clássico fundador do gênero, além de abrir espaço para discussões sobre autonomia, civilização e natureza.",
+        "amazonUrl": "https://www.amazon.com.br/Robinson-Cruso%C3%A9-Daniel-Defoe/dp/8573387807",
+        "coverUrl": "https://m.media-amazon.com/images/P/8573387807.jpg",
+        "categories": ["Aventura", "Clássico"]
+      },
+      {
+        "title": "A ilha do tesouro",
+        "author": "Robert Louis Stevenson",
+        "publisher": "Saraiva",
+        "description": "Clássico com piratas, mapas secretos, travessias e tensão constante, um dos marcos da literatura de aventura.",
+        "suggestedBy": "Equipe Pontes",
+        "suggestionReason": "É uma narrativa muito reconhecível no imaginário coletivo e ajuda a conectar leitores a um gênero cheio de ritmo, suspense e imaginação.",
+        "amazonUrl": "https://www.amazon.com.br/Ilha-Tesouro-Robert-Louis-Stevenson/dp/850600697X",
+        "coverUrl": "https://m.media-amazon.com/images/P/850600697X.jpg",
+        "categories": ["Aventura", "Clássico"]
+      },
+      {
+        "title": "Into the Wild",
+        "author": "Jon Krakauer",
+        "publisher": "Anchor Books",
+        "description": "Relato real sobre a trajetória de Christopher McCandless e sua busca radical por liberdade e sentido longe da vida convencional.",
+        "suggestedBy": "Equipe Pontes",
+        "suggestionReason": "A presença de uma obra de não ficção no mês enriquece o tema da aventura e mostra como o impulso de explorar também pode gerar reflexão existencial.",
+        "amazonUrl": "https://www.amazon.com.br/Into-Wild-Jon-Krakauer/dp/0385486804",
+        "coverUrl": "https://m.media-amazon.com/images/P/0385486804.jpg",
+        "categories": ["Biografia", "Aventura"]
+      }
+    ]
+  },
+  {
+    "month": "2026-08",
+    "label": "Agosto 2026",
+    "theme": "Ciência e Curiosidade",
+    "themeDescription": "Agosto propõe leituras que despertam a curiosidade científica e mostram como a ciência pode ser narrada de forma acessível, fascinante e conectada às grandes perguntas sobre humanidade, universo, conhecimento e descoberta.",
+    "books": [
+      {
+        "title": "Sapiens",
+        "author": "Yuval Noah Harari",
+        "publisher": "Companhia das Letras",
+        "description": "Panorama ambicioso da história da humanidade, ligando biologia, cultura, economia e sociedade em uma narrativa de divulgação histórica.",
+        "suggestedBy": "Equipe Pontes",
+        "suggestionReason": "É uma leitura que costuma engajar muito bem por reunir informação, provocação intelectual e linguagem clara, abrindo portas para leitores curiosos sobre história e sociedade.",
+        "amazonUrl": "https://www.amazon.com.br/Sapiens-Nova-edi%C3%A7%C3%A3o-hist%C3%B3ria-humanidade/dp/8535933921",
+        "coverUrl": "https://m.media-amazon.com/images/P/8535933921.jpg",
+        "categories": ["Ciência", "História"]
+      },
+      {
+        "title": "Uma breve história do tempo",
+        "author": "Stephen Hawking",
+        "publisher": "Intrínseca",
+        "description": "Introdução envolvente a temas como origem do universo, tempo, buracos negros e cosmologia moderna.",
+        "suggestedBy": "Equipe Pontes",
+        "suggestionReason": "A obra é um clássico da divulgação científica e mostra que assuntos complexos podem ser apresentados de forma instigante para leitores não especialistas.",
+        "amazonUrl": "https://www.amazon.com.br/Uma-Breve-Hist%C3%B3ria-do-Tempo/dp/8580576466",
+        "coverUrl": "https://m.media-amazon.com/images/P/8580576466.jpg",
+        "categories": ["Ciência", "Cosmologia"]
+      },
+      {
+        "title": "O gene",
+        "author": "Siddhartha Mukherjee",
+        "publisher": "Companhia das Letras",
+        "description": "Narrativa ampla e humana sobre a história da genética, suas descobertas, dilemas e impactos na vida contemporânea.",
+        "suggestedBy": "Equipe Pontes",
+        "suggestionReason": "É uma excelente escolha para conectar ciência, medicina, ética e história, ampliando a ideia de leitura científica para além do formato puramente técnico.",
+        "amazonUrl": "https://www.amazon.com.br/dp/8535928073",
+        "coverUrl": "https://m.media-amazon.com/images/P/8535928073.jpg",
+        "categories": ["Ciência", "Saúde"]
+      },
+      {
+        "title": "Astrofísica para apressados",
+        "author": "Neil deGrasse Tyson",
+        "publisher": "Planeta",
+        "description": "Livro curto e bem-humorado que apresenta conceitos fundamentais de astronomia e cosmologia para leitores curiosos.",
+        "suggestedBy": "Equipe Pontes",
+        "suggestionReason": "Funciona muito bem como leitura de entrada para temas científicos, unindo clareza, leveza e senso de maravilhamento diante do universo.",
+        "amazonUrl": "https://www.amazon.com.br/Astrof%C3%ADsica-para-apressados-deGrasse-Tyson/dp/6555351284",
+        "coverUrl": "https://m.media-amazon.com/images/P/6555351284.jpg",
+        "categories": ["Ciência", "Astronomia"]
+      }
+    ]
+  },
+  {
+    "month": "2026-07",
+    "label": "Julho 2026",
+    "theme": "Literatura Brasileira",
+    "themeDescription": "Em julho, valorizamos obras marcantes da literatura brasileira que ajudam a compreender o país em sua diversidade regional, social, histórica e humana, aproximando os leitores de vozes fundamentais do nosso repertório cultural.",
+    "books": [
+      {
+        "title": "Capitães da areia",
+        "author": "Jorge Amado",
+        "publisher": "Companhia das Letras",
+        "description": "Romance sobre infância abandonada, desigualdade e sobrevivência nas ruas de Salvador, com enorme força narrativa e social.",
+        "suggestedBy": "Equipe Pontes",
+        "suggestionReason": "A obra une qualidade literária, importância histórica e grande potência de discussão sobre infância, exclusão e solidariedade no Brasil.",
+        "amazonUrl": "https://www.amazon.com.br/Capit%C3%A3es-areia-Jorge-Amado/dp/8535914064",
+        "coverUrl": "https://m.media-amazon.com/images/P/8535914064.jpg",
+        "categories": ["Literatura Brasileira", "Romance"]
+      },
+      {
+        "title": "Torto arado",
+        "author": "Itamar Vieira Junior",
+        "publisher": "Todavia",
+        "description": "Romance contemporâneo sobre terra, ancestralidade, violência, espiritualidade e desigualdade no interior do Brasil.",
+        "suggestedBy": "Equipe Pontes",
+        "suggestionReason": "É uma das obras brasileiras mais importantes dos últimos anos e mostra como a literatura contemporânea pode dialogar com tradição, crítica social e emoção.",
+        "amazonUrl": "https://www.amazon.com.br/Torto-arado-Itamar-Vieira-Junior/dp/6580309318",
+        "coverUrl": "https://m.media-amazon.com/images/P/6580309318.jpg",
+        "categories": ["Romance", "Brasil"]
+      },
+      {
+        "title": "Vidas secas",
+        "author": "Graciliano Ramos",
+        "publisher": "Record",
+        "description": "Clássico do regionalismo brasileiro que retrata a dureza da vida no sertão e a luta cotidiana por sobrevivência.",
+        "suggestedBy": "Equipe Pontes",
+        "suggestionReason": "É fundamental para refletir sobre linguagem, território, desigualdade e resistência, além de ser uma referência incontornável da literatura nacional.",
+        "amazonUrl": "https://www.amazon.com.br/Vidas-secas-Graciliano-Ramos/dp/6556925799",
+        "coverUrl": "https://m.media-amazon.com/images/P/6556925799.jpg",
+        "categories": ["Clássico", "Literatura Brasileira"]
+      },
+      {
+        "title": "O Auto da Compadecida",
+        "author": "Ariano Suassuna",
+        "publisher": "Nova Fronteira",
+        "description": "Peça teatral que mistura humor, religiosidade popular, crítica social e tradição oral nordestina em uma narrativa inesquecível.",
+        "suggestedBy": "Equipe Pontes",
+        "suggestionReason": "A obra ajuda a ampliar o repertório de gêneros da curadoria e valoriza uma expressão cultural brasileira vibrante, popular e literariamente sofisticada.",
+        "amazonUrl": "https://www.amazon.com.br/Auto-Compadecida-Ariano-Suassuna/dp/8520937829",
+        "coverUrl": "https://m.media-amazon.com/images/P/8520937829.jpg",
+        "categories": ["Teatro", "Brasil"]
+      }
+    ]
+  },
+  {
+    "month": "2026-06",
+    "label": "Junho 2026",
+    "theme": "Clássicos da Literatura",
+    "themeDescription": "Junho é dedicado a obras que atravessaram gerações e continuam influenciando leitores e escritoras e escritores no mundo inteiro, mostrando como certos livros permanecem vivos porque seguem fazendo perguntas incômodas e belas.",
+    "books": [
+      {
+        "title": "Dom Casmurro",
+        "author": "Machado de Assis",
+        "publisher": "Penguin Companhia",
+        "description": "Romance clássico sobre memória, ciúme, dúvida e construção narrativa, com uma das vozes mais marcantes da literatura brasileira.",
+        "suggestedBy": "Equipe Pontes",
+        "suggestionReason": "É essencial para fortalecer o repertório literário nacional e para mostrar como um clássico pode continuar provocando leituras, debates e interpretações muito atuais.",
+        "amazonUrl": "https://www.amazon.com.br/Dom-Casmurro-Machado-Assis/dp/8582850352",
+        "coverUrl": "https://m.media-amazon.com/images/P/8582850352.jpg",
+        "categories": ["Clássico", "Literatura Brasileira"]
+      },
+      {
+        "title": "Orgulho e preconceito",
+        "author": "Jane Austen",
+        "publisher": "Martin Claret",
+        "description": "Romance sobre amor, classe social, orgulho, expectativas e amadurecimento em uma das narrativas mais célebres da literatura inglesa.",
+        "suggestedBy": "Equipe Pontes",
+        "suggestionReason": "O livro combina valor canônico, leitura prazerosa e grande apelo intergeracional, ajudando a aproximar o público dos clássicos sem rigidez acadêmica.",
+        "amazonUrl": "https://www.amazon.com.br/Orgulho-Preconceito-Jane-Austen/dp/8544001823",
+        "coverUrl": "https://m.media-amazon.com/images/P/8544001823.jpg",
+        "categories": ["Clássico", "Romance"]
+      },
+      {
+        "title": "1984",
+        "author": "George Orwell",
+        "publisher": "Companhia das Letras",
+        "description": "Distopia sobre vigilância, manipulação, linguagem e autoritarismo em uma sociedade totalmente controlada pelo Estado.",
+        "suggestedBy": "Equipe Pontes",
+        "suggestionReason": "É um clássico incontornável para discutir poder, liberdade e pensamento crítico, temas que seguem dramaticamente atuais.",
+        "amazonUrl": "https://www.amazon.com.br/1984-George-Orwell/dp/8535914846",
+        "coverUrl": "https://m.media-amazon.com/images/P/8535914846.jpg",
+        "categories": ["Distopia"]
+      },
+      {
+        "title": "O velho e o mar",
+        "author": "Ernest Hemingway",
+        "publisher": "Bertrand Brasil",
+        "description": "História curta e intensa sobre perseverança, dignidade, solidão e luta diante da adversidade.",
+        "suggestedBy": "Equipe Pontes",
+        "suggestionReason": "A concisão poderosa de Hemingway torna este livro excelente para mostrar que profundidade literária não depende de extensão, além de ser um clássico muito acessível.",
+        "amazonUrl": "https://www.amazon.com.br/velho-mar-Ernest-Hemingway/dp/852861798X",
+        "coverUrl": "https://m.media-amazon.com/images/P/852861798X.jpg",
+        "categories": ["Clássico"]
+      }
+    ]
+  },
+  {
+    "month": "2026-05",
+    "label": "Maio 2026",
+    "theme": "Histórias que Transformam",
+    "themeDescription": "Neste mês, destacamos livros que transformam o olhar do leitor sobre si mesmo, sobre o outro e sobre o mundo, reunindo narrativas que inspiram empatia, amadurecimento e reflexão sobre o que realmente importa.",
+    "books": [
+      {
+        "title": "O Pequeno Príncipe",
+        "author": "Antoine de Saint-Exupéry",
+        "publisher": "Agir",
+        "description": "Fábula poética sobre amizade, amor, perda e sentido da vida, capaz de dialogar com leitores de diferentes idades.",
+        "suggestedBy": "Equipe Pontes",
+        "suggestionReason": "É uma obra universal, delicada e profunda, que convida à leitura afetiva e à releitura ao longo da vida, sendo perfeita para uma curadoria institucional ampla.",
+        "amazonUrl": "https://www.amazon.com.br/Pequeno-Pr%C3%ADncipe-Antoine-Saint-Exup%C3%A9ry/dp/8522031444",
+        "coverUrl": "https://m.media-amazon.com/images/P/8522031444.jpg",
+        "categories": ["Clássico", "Fábula"]
+      },
+      {
+        "title": "A coragem de ser imperfeito",
+        "author": "Brené Brown",
+        "publisher": "Sextante",
+        "description": "Reflexão sobre vulnerabilidade, coragem, vergonha e autenticidade, baseada em pesquisas e exemplos práticos.",
+        "suggestedBy": "Equipe Pontes",
+        "suggestionReason": "O livro fortalece o eixo de desenvolvimento humano da curadoria e oferece uma leitura contemporânea que pode gerar identificação imediata com muitos leitores.",
+        "amazonUrl": "https://www.amazon.com.br/coragem-ser-imperfeito-Bren%C3%A9-Brown/dp/8543104335",
+        "coverUrl": "https://m.media-amazon.com/images/P/8543104335.jpg",
+        "categories": ["Desenvolvimento Pessoal"]
+      },
+      {
+        "title": "Extraordinário",
+        "author": "R.J. Palacio",
+        "publisher": "Intrínseca",
+        "description": "História emocionante sobre um menino que enfrenta preconceitos e ensina, a quem o cerca, o valor da gentileza e da empatia.",
+        "suggestedBy": "Equipe Pontes",
+        "suggestionReason": "É um livro muito eficaz para mobilizar conversas sobre acolhimento, respeito e convivência, temas centrais para projetos de formação leitora e cidadã.",
+        "amazonUrl": "https://www.amazon.com.br/Extraordin%C3%A1rio-R-J-Palacio/dp/8580573017",
+        "coverUrl": "https://m.media-amazon.com/images/P/8580573017.jpg",
+        "categories": ["Juvenil", "Empatia"]
+      },
+      {
+        "title": "Quarto de despejo",
+        "author": "Carolina Maria de Jesus",
+        "publisher": "Ática",
+        "description": "Diário poderoso sobre a vida na favela brasileira, marcado por lucidez, força narrativa e enorme relevância histórica.",
+        "suggestedBy": "Equipe Pontes",
+        "suggestionReason": "A obra é indispensável para qualquer curadoria que queira unir literatura, memória social e reflexão crítica sobre o Brasil real.",
+        "amazonUrl": "https://www.amazon.com.br/Quarto-Despejo-Di%C3%A1rio-Uma-Favelada/dp/8508171277",
+        "coverUrl": "https://m.media-amazon.com/images/P/8508171277.jpg",
+        "categories": ["Memórias", "Sociedade"]
+      }
+    ]
+  },
+  {
+    "month": "2026-04",
+    "label": "Abril 2026",
+    "theme": "Imaginação e Fantasia",
+    "themeDescription": "Em abril, reunimos histórias que expandem os limites da imaginação e mostram como mundos fantásticos, criaturas improváveis e jornadas extraordinárias podem revelar verdades muito humanas sobre coragem, medo, amizade e crescimento.",
+    "books": [
+      {
+        "title": "O Hobbit",
+        "author": "J.R.R. Tolkien",
+        "publisher": "HarperCollins Brasil",
+        "description": "A jornada de Bilbo Bolseiro em uma aventura repleta de perigos, descobertas e criaturas fantásticas no universo da Terra-média.",
+        "suggestedBy": "Equipe Pontes",
+        "suggestionReason": "É uma das portas de entrada mais clássicas e envolventes para a fantasia, combinando aventura, humor e imaginação em uma narrativa que permanece acessível para públicos amplos.",
+        "amazonUrl": "https://www.amazon.com.br/Hobbit-J-R-Tolkien/dp/8578277104",
+        "coverUrl": "https://m.media-amazon.com/images/P/8578277104.jpg",
+        "categories": ["Fantasia", "Aventura"]
+      },
+      {
+        "title": "Alice no País das Maravilhas",
+        "author": "Lewis Carroll",
+        "publisher": "Zahar",
+        "description": "Clássica viagem de Alice por um universo surreal, lúdico e imprevisível, povoado por personagens inesquecíveis.",
+        "suggestedBy": "Equipe Pontes",
+        "suggestionReason": "O livro estimula criatividade, curiosidade e leitura simbólica, funcionando muito bem tanto para leitores iniciantes quanto para quem gosta de revisitar grandes clássicos.",
+        "amazonUrl": "https://www.amazon.com.br/Alice-Pa%C3%ADs-das-Maravilhas-Classic/dp/8594541759",
+        "coverUrl": "https://m.media-amazon.com/images/P/8594541759.jpg",
+        "categories": ["Fantasia", "Clássico"]
+      },
+      {
+        "title": "Coraline",
+        "author": "Neil Gaiman",
+        "publisher": "Rocco",
+        "description": "Uma menina encontra um mundo alternativo aparentemente perfeito, mas logo percebe que por trás da fantasia existe uma ameaça assustadora.",
+        "suggestedBy": "Equipe Pontes",
+        "suggestionReason": "Coraline é uma fantasia moderna de leitura fluida e atmosfera marcante, ideal para atrair leitores jovens e mostrar como o estranho e o imaginativo também podem ser sofisticados.",
+        "amazonUrl": "https://www.amazon.com.br/dp/8551006754",
+        "coverUrl": "https://m.media-amazon.com/images/P/8551006754.jpg",
+        "categories": ["Fantasia", "Juvenil"]
+      },
+      {
+        "title": "O nome do vento",
+        "author": "Patrick Rothfuss",
+        "publisher": "Arqueiro",
+        "description": "A história de Kvothe, personagem brilhante e complexo, em um universo de fantasia que combina música, magia e memória.",
+        "suggestedBy": "Equipe Pontes",
+        "suggestionReason": "É uma obra contemporânea muito querida entre leitores de fantasia e ajuda a aproximar o público de narrativas mais longas e imersivas sem perder o apelo emocional.",
+        "amazonUrl": "https://www.amazon.com.br/nome-do-vento-Patrick-Rothfuss/dp/8599296493",
+        "coverUrl": "https://m.media-amazon.com/images/P/8599296493.jpg",
+        "categories": ["Fantasia", "Aventura"]
+      }
+    ]
+  },
+  {
+    "month": "2026-03",
+    "label": "Março 2026",
+    "theme": "Vozes de Mulheres",
+    "themeDescription": "Neste mês, celebramos autoras que ampliam o repertório dos leitores com narrativas marcadas por sensibilidade, força crítica e diferentes perspectivas sobre identidade, pertencimento, memória, cotidiano e transformação social.",
+    "books": [
+      {
+        "title": "Conversa na Sala",
+        "author": "Martha Medeiros",
+        "publisher": "L&PM",
+        "description": "Crônicas que exploram sentimentos, relações e reflexões do cotidiano com a linguagem direta, sensível e bem-humorada característica da autora.",
+        "suggestedBy": "Equipe Pontes",
+        "suggestionReason": "A escrita acessível de Martha Medeiros funciona muito bem como porta de entrada para leitores diversos, ao mesmo tempo em que convida à reflexão sobre afetos, escolhas e vida cotidiana.",
+        "amazonUrl": "https://www.amazon.com.br/Conversa-na-Sala-Martha-Medeiros/dp/6556663824",
+        "coverUrl": "https://m.media-amazon.com/images/P/6556663824.jpg",
+        "categories": ["Crônica", "Literatura Brasileira"]
+      },
+      {
+        "title": "No seu pescoço",
+        "author": "Chimamanda Ngozi Adichie",
+        "publisher": "Companhia das Letras",
+        "description": "Coletânea de contos sobre identidade, imigração, pertencimento e choques culturais, escrita por uma das vozes mais importantes da literatura contemporânea.",
+        "suggestedBy": "Equipe Pontes",
+        "suggestionReason": "Os contos de Chimamanda ampliam horizontes culturais e mostram, com grande humanidade, como experiências pessoais e políticas podem se cruzar de forma intensa e memorável.",
+        "amazonUrl": "https://www.amazon.com.br/seu-pesco%C3%A7o-Chimamanda-Ngozi-Adichie/dp/8535929452",
+        "coverUrl": "https://m.media-amazon.com/images/P/8535929452.jpg",
+        "categories": ["Contos", "Literatura Africana"]
+      },
+      {
+        "title": "Olhos d'Água",
+        "author": "Conceição Evaristo",
+        "publisher": "Pallas",
+        "description": "Contos de forte carga poética e social que retratam experiências de mulheres negras brasileiras, pobreza, afeto, violência e resistência.",
+        "suggestedBy": "Equipe Pontes",
+        "suggestionReason": "É uma obra essencial para ampliar representatividade no catálogo e provocar reflexões profundas sobre desigualdade, memória, dignidade e humanidade no contexto brasileiro.",
+        "amazonUrl": "https://www.amazon.com.br/Olhos-D%C3%81gua-Concei%C3%A7ao-Evaristo/dp/8534705259",
+        "coverUrl": "https://m.media-amazon.com/images/P/8534705259.jpg",
+        "categories": ["Contos", "Literatura Brasileira"]
+      },
+      {
+        "title": "A casa dos espíritos",
+        "author": "Isabel Allende",
+        "publisher": "Bertrand Brasil",
+        "description": "Saga familiar que mistura realismo mágico, história política e memória afetiva em uma das obras mais marcantes da literatura latino-americana.",
+        "suggestedBy": "Equipe Pontes",
+        "suggestionReason": "Além de ser um clássico escrito por uma autora fundamental da América Latina, o romance conecta emoção, contexto histórico e imaginação de uma forma que enriquece muito a curadoria.",
+        "amazonUrl": "https://www.amazon.com.br/casa-dos-esp%C3%ADritos-capa-nova/dp/8528622568",
+        "coverUrl": "https://m.media-amazon.com/images/P/8528622568.jpg",
+        "categories": ["Romance", "Realismo Mágico"]
+      }
+    ]
+  },
+  {
     "month": "2026-02",
     "label": "Fevereiro 2026",
     "theme": "Transformação Pessoal",

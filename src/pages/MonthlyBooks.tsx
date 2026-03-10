@@ -3,12 +3,7 @@ import { BookOpen, ShoppingCart, User, Lock, Sparkles, Tag } from "lucide-react"
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import booksData from "@/data/monthly-books.json";
@@ -37,6 +32,23 @@ interface MonthEntry {
   books: Book[];
 }
 
+function getCurrentBrazilMonth(date = new Date()) {
+  const formatter = new Intl.DateTimeFormat("en-CA", {
+    timeZone: "America/Sao_Paulo",
+    year: "numeric",
+    month: "2-digit",
+  });
+  const parts = formatter.formatToParts(date);
+  const year = parts.find((part) => part.type === "year")?.value;
+  const month = parts.find((part) => part.type === "month")?.value;
+
+  if (!year || !month) {
+    throw new Error("Unable to determine current month for Brazil timezone.");
+  }
+
+  return `${year}-${month}`;
+}
+
 function CategoryBadge({ label }: { label: string }) {
   return (
     <span className="inline-flex items-center gap-1 rounded-full bg-accent/15 px-2.5 py-0.5 text-xs font-medium text-accent">
@@ -54,13 +66,9 @@ function ThemeCard({ theme, description }: { theme: string; description: string 
       </div>
       <div className="flex items-center gap-2 mb-2">
         <Sparkles className="h-5 w-5 text-accent" />
-        <h3 className="font-display text-lg font-bold text-primary">
-          Tema: {theme}
-        </h3>
+        <h3 className="font-display text-lg font-bold text-primary">Tema: {theme}</h3>
       </div>
-      <p className="text-sm leading-relaxed text-foreground/75 max-w-2xl">
-        {description}
-      </p>
+      <p className="text-sm leading-relaxed text-foreground/75 max-w-2xl">{description}</p>
     </div>
   );
 }
@@ -79,12 +87,7 @@ function BookCard({ book }: { book: Book }) {
           {/* Book cover */}
           <div className="shrink-0 w-24 h-36 rounded-lg overflow-hidden bg-secondary shadow-md group-hover:shadow-lg transition-shadow ring-1 ring-border/30">
             {book.coverUrl ? (
-              <img
-                src={book.coverUrl}
-                alt={`Capa: ${book.title}`}
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                loading="lazy"
-              />
+              <img src={book.coverUrl} alt={`Capa: ${book.title}`} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
             ) : (
               <div className="flex h-full w-full items-center justify-center bg-primary/10">
                 <BookOpen className="h-8 w-8 text-primary/50" />
@@ -107,18 +110,14 @@ function BookCard({ book }: { book: Book }) {
         </div>
       </CardHeader>
       <CardContent className="space-y-4">
-        <p className="text-sm leading-relaxed text-foreground/85">
-          {book.description}
-        </p>
+        <p className="text-sm leading-relaxed text-foreground/85">{book.description}</p>
 
         <div className="rounded-lg bg-secondary/60 border border-border/40 p-3">
           <div className="flex items-center gap-2 text-xs font-medium text-muted-foreground mb-1">
             <User className="h-3.5 w-3.5" />
             Sugerido por {book.suggestedBy}
           </div>
-          <p className="text-sm italic text-foreground/75">
-            "{book.suggestionReason}"
-          </p>
+          <p className="text-sm italic text-foreground/75">"{book.suggestionReason}"</p>
         </div>
 
         {hasLink ? (
@@ -163,9 +162,7 @@ function PasswordGate({ onUnlock }: { onUnlock: () => void }) {
             <Lock className="h-6 w-6 text-primary-foreground" />
           </div>
           <CardTitle className="text-xl">Área restrita</CardTitle>
-          <p className="text-sm text-muted-foreground">
-            Digite a senha para acessar as sugestões de leitura.
-          </p>
+          <p className="text-sm text-muted-foreground">Digite a senha para acessar as sugestões de leitura.</p>
         </CardHeader>
         <CardContent>
           <form onSubmit={handleSubmit} className="space-y-3">
@@ -180,9 +177,7 @@ function PasswordGate({ onUnlock }: { onUnlock: () => void }) {
               className={error ? "border-destructive" : ""}
               autoFocus
             />
-            {error && (
-              <p className="text-xs text-destructive">Senha incorreta.</p>
-            )}
+            {error && <p className="text-xs text-destructive">Senha incorreta.</p>}
             <Button type="submit" className="w-full">
               Entrar
             </Button>
@@ -215,7 +210,8 @@ export default function MonthlyBooks() {
   }
 
   const data = booksData as MonthEntry[];
-  const sorted = [...data].sort((a, b) => b.month.localeCompare(a.month));
+  const currentMonth = getCurrentBrazilMonth();
+  const sorted = data.filter((entry) => entry.month <= currentMonth).sort((a, b) => b.month.localeCompare(a.month));
   const [current, ...past] = sorted;
 
   return (
@@ -227,20 +223,15 @@ export default function MonthlyBooks() {
         <div className="container-narrow">
           <div className="flex items-center gap-3 mb-3">
             <BookOpen className="h-8 w-8" />
-            <h1 className="text-3xl md:text-4xl text-primary-foreground">
-              Livros do Mês
-            </h1>
+            <h1 className="text-3xl md:text-4xl text-primary-foreground">Livros do Mês</h1>
           </div>
-          <p className="text-primary-foreground/80 max-w-2xl text-lg">
-            Sugestões de leitura selecionadas com carinho pela equipe e
-            colaboradores do Pontes para Leitura.
-          </p>
+          <p className="text-primary-foreground/80 max-w-2xl text-lg">Sugestões de leitura selecionadas com carinho pela equipe e colaboradores do Pontes para Leitura.</p>
         </div>
       </section>
 
       {/* Current month */}
       <main className="flex-1">
-        {current && (
+        {current ? (
           <section className="section-padding pb-8 md:pb-12">
             <div className="container-narrow">
               <h2 className="text-2xl font-semibold mb-6 text-primary flex items-center gap-2">
@@ -248,9 +239,7 @@ export default function MonthlyBooks() {
                 {current.label}
               </h2>
 
-              {current.theme && current.themeDescription && (
-                <ThemeCard theme={current.theme} description={current.themeDescription} />
-              )}
+              {current.theme && current.themeDescription && <ThemeCard theme={current.theme} description={current.themeDescription} />}
 
               <div className="grid gap-6 sm:grid-cols-2">
                 {current.books.map((book) => (
@@ -259,32 +248,32 @@ export default function MonthlyBooks() {
               </div>
             </div>
           </section>
+        ) : (
+          <section className="section-padding pb-8 md:pb-12">
+            <div className="container-narrow">
+              <Card className="border-border/60 bg-card">
+                <CardContent className="py-8 text-center text-muted-foreground">As sugestões de leitura ainda não foram publicadas para este mês.</CardContent>
+              </Card>
+            </div>
+          </section>
         )}
 
         {/* Archive */}
         {past.length > 0 && (
           <section className="px-6 pb-16 md:px-8 lg:px-12">
             <div className="container-narrow">
-              <h2 className="text-xl font-semibold mb-4 text-foreground/70">
-                Meses anteriores
-              </h2>
+              <h2 className="text-xl font-semibold mb-4 text-foreground/70">Meses anteriores</h2>
               <Accordion type="single" collapsible onValueChange={(val) => val && analytics.sectionView(`archive_${val}`)}>
                 {past.map((entry) => (
                   <AccordionItem key={entry.month} value={entry.month}>
                     <AccordionTrigger className="text-base">
                       <span className="flex items-center gap-3">
                         {entry.label}
-                        {entry.theme && (
-                          <span className="text-xs font-normal text-muted-foreground bg-secondary px-2 py-0.5 rounded-full">
-                            {entry.theme}
-                          </span>
-                        )}
+                        {entry.theme && <span className="text-xs font-normal text-muted-foreground bg-secondary px-2 py-0.5 rounded-full">{entry.theme}</span>}
                       </span>
                     </AccordionTrigger>
                     <AccordionContent>
-                      {entry.theme && entry.themeDescription && (
-                        <ThemeCard theme={entry.theme} description={entry.themeDescription} />
-                      )}
+                      {entry.theme && entry.themeDescription && <ThemeCard theme={entry.theme} description={entry.themeDescription} />}
                       <div className="grid gap-6 pt-2 sm:grid-cols-2">
                         {entry.books.map((book) => (
                           <BookCard key={book.title} book={book} />
