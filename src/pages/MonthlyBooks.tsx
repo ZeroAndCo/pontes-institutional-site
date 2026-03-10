@@ -1,16 +1,12 @@
-import { useState, useEffect } from "react";
-import { BookOpen, ShoppingCart, User, Lock, Sparkles, Tag } from "lucide-react";
+import { useEffect } from "react";
+import { BookOpen, ShoppingCart, User, Sparkles, Tag } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import booksData from "@/data/monthly-books.json";
-import { analytics, trackEvent } from "@/lib/analytics";
-
-const PASSWORD = "pontes2026";
-const SESSION_KEY = "pontes-livros-auth";
+import { analytics } from "@/lib/analytics";
 
 interface Book {
   title: string;
@@ -139,65 +135,7 @@ function BookCard({ book, month }: { book: Book; month: string }) {
   );
 }
 
-function PasswordGate({ onUnlock }: { onUnlock: () => void }) {
-  const [password, setPassword] = useState("");
-  const [error, setError] = useState(false);
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (password === PASSWORD) {
-      sessionStorage.setItem(SESSION_KEY, "true");
-      trackEvent("password_unlock", { page: "livros-do-mes" });
-      onUnlock();
-    } else {
-      trackEvent("password_failed", { page: "livros-do-mes" });
-      setError(true);
-    }
-  };
-
-  return (
-    <div className="flex min-h-screen items-center justify-center bg-background px-4">
-      <Card className="w-full max-w-sm border-primary/20 shadow-lg">
-        <CardHeader className="text-center">
-          <div className="mx-auto mb-3 flex h-14 w-14 items-center justify-center rounded-full gradient-hero">
-            <Lock className="h-6 w-6 text-primary-foreground" />
-          </div>
-          <CardTitle className="text-xl">Área restrita</CardTitle>
-          <p className="text-sm text-muted-foreground">Digite a senha para acessar as sugestões de leitura.</p>
-        </CardHeader>
-        <CardContent>
-          <form onSubmit={handleSubmit} className="space-y-3">
-            <Input
-              type="password"
-              placeholder="Senha"
-              value={password}
-              onChange={(e) => {
-                setPassword(e.target.value);
-                setError(false);
-              }}
-              className={error ? "border-destructive" : ""}
-              autoFocus
-            />
-            {error && <p className="text-xs text-destructive">Senha incorreta.</p>}
-            <Button type="submit" className="w-full">
-              Entrar
-            </Button>
-          </form>
-        </CardContent>
-      </Card>
-    </div>
-  );
-}
-
 export default function MonthlyBooks() {
-  const [authenticated, setAuthenticated] = useState(false);
-
-  useEffect(() => {
-    if (sessionStorage.getItem(SESSION_KEY) === "true") {
-      setAuthenticated(true);
-    }
-  }, []);
-
   useEffect(() => {
     document.title = "Livros do Mês | Pontes para Leitura";
     analytics.pageView("Livros do Mês", "/livros-do-mes");
@@ -205,10 +143,6 @@ export default function MonthlyBooks() {
       document.title = "Pontes para Leitura | Hub de Incentivo à Leitura";
     };
   }, []);
-
-  if (!authenticated) {
-    return <PasswordGate onUnlock={() => setAuthenticated(true)} />;
-  }
 
   const data = booksData as MonthEntry[];
   const currentMonth = getCurrentBrazilMonth();

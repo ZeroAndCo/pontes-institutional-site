@@ -15,9 +15,16 @@ const Header = () => {
     { href: "#pilares", label: "Pilares" },
     { href: "#equipe", label: "Equipe" },
     { href: "#contato", label: "Contato" },
+    { href: "/livros-do-mes", label: "Livros do Mês" },
   ];
 
-  const getHref = (hash: string) => (isHome ? hash : `/${hash}`);
+  const getHref = (href: string) => {
+    if (href.startsWith("#")) {
+      return isHome ? href : `/${href}`;
+    }
+
+    return href;
+  };
 
   const handleNavClick = (section: string) => {
     analytics.navClick(section);
