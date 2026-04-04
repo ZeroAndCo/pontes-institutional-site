@@ -281,7 +281,7 @@ const ClayEditoras = () => {
           <div className="grid md:grid-cols-2 gap-8 mb-10">
             {/* Fundadora */}
             <div className="bg-card p-8 rounded-2xl border-2 border-primary/30 relative">
-              <div className="inline-block px-3 py-1 bg-primary/10 text-primary rounded-full text-xs font-semibold mb-4">🟢 Parceira Fundadora</div>
+              <div className="inline-block px-3 py-1 bg-primary/10 text-primary rounded-full text-xs font-semibold mb-4">Parceira Fundadora</div>
               <h3 className="text-xl font-bold text-foreground mb-4">Presença institucional e participação estratégica na fase inicial</h3>
               <p className="text-sm text-muted-foreground mb-6">Ideal para editoras que desejam:</p>
               <ul className="space-y-3">
@@ -301,7 +301,7 @@ const ClayEditoras = () => {
 
             {/* Destaque */}
             <div className="bg-card p-8 rounded-2xl border-2 border-accent/30 relative">
-              <div className="inline-block px-3 py-1 bg-accent/10 text-accent rounded-full text-xs font-semibold mb-4">🔵 Parceira Destaque</div>
+              <div className="inline-block px-3 py-1 bg-accent/10 text-accent rounded-full text-xs font-semibold mb-4">Parceira Destaque</div>
               <h3 className="text-xl font-bold text-foreground mb-4">Maior protagonismo, visibilidade e ativação de marca</h3>
               <p className="text-sm text-muted-foreground mb-6">Ideal para editoras que desejam:</p>
               <ul className="space-y-3">
@@ -425,14 +425,14 @@ const ClayEditoras = () => {
           {/* Pricing Cards */}
           <div className="grid md:grid-cols-2 gap-8 mb-10">
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
-              <div className="text-sm font-medium text-orange-light mb-2">🟢 Editora Parceira Fundadora</div>
+              <div className="text-sm font-medium text-orange-light mb-2">Editora Parceira Fundadora</div>
               <div className="text-4xl md:text-5xl font-display font-bold text-white mb-2">R$ 12.000</div>
               <p className="text-white/60 text-sm mb-6">por ano</p>
               <p className="text-white/80 text-sm">Presença institucional + participação estratégica no ecossistema do CLAY</p>
             </div>
 
             <div className="bg-accent/20 backdrop-blur-sm rounded-2xl p-8 border border-accent/30">
-              <div className="text-sm font-medium text-orange-light mb-2">🔵 Editora Parceira Destaque</div>
+              <div className="text-sm font-medium text-orange-light mb-2">Editora Parceira Destaque</div>
               <div className="text-4xl md:text-5xl font-display font-bold text-white mb-2">R$ 18.000</div>
               <p className="text-white/60 text-sm mb-6">por ano</p>
               <p className="text-white/80 text-sm">Maior protagonismo, visibilidade e ativação ao longo do ciclo fundador</p>
