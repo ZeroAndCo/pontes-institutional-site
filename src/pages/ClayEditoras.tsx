@@ -425,7 +425,7 @@ const ClayEditoras = () => {
           {/* Pricing Cards */}
           <div className="grid md:grid-cols-2 gap-8 mb-10">
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
-              <div className="text-sm font-medium text-orange-light mb-2">🟢 Editora Parceira Fundadora</div>
+              <div className="text-sm font-medium text-orange-light mb-2">Editora Parceira Fundadora</div>
               <div className="text-4xl md:text-5xl font-display font-bold text-white mb-2">R$ 12.000</div>
               <p className="text-white/60 text-sm mb-6">por ano</p>
               <p className="text-white/80 text-sm">Presença institucional + participação estratégica no ecossistema do CLAY</p>
