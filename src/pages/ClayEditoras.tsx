@@ -301,7 +301,7 @@ const ClayEditoras = () => {
 
             {/* Destaque */}
             <div className="bg-card p-8 rounded-2xl border-2 border-accent/30 relative">
-              <div className="inline-block px-3 py-1 bg-accent/10 text-accent rounded-full text-xs font-semibold mb-4">🔵 Parceira Destaque</div>
+              <div className="inline-block px-3 py-1 bg-accent/10 text-accent rounded-full text-xs font-semibold mb-4">Parceira Destaque</div>
               <h3 className="text-xl font-bold text-foreground mb-4">Maior protagonismo, visibilidade e ativação de marca</h3>
               <p className="text-sm text-muted-foreground mb-6">Ideal para editoras que desejam:</p>
               <ul className="space-y-3">
