@@ -432,7 +432,7 @@ const ClayEditoras = () => {
             </div>
 
             <div className="bg-accent/20 backdrop-blur-sm rounded-2xl p-8 border border-accent/30">
-              <div className="text-sm font-medium text-orange-light mb-2">🔵 Editora Parceira Destaque</div>
+              <div className="text-sm font-medium text-orange-light mb-2">Editora Parceira Destaque</div>
               <div className="text-4xl md:text-5xl font-display font-bold text-white mb-2">R$ 18.000</div>
               <p className="text-white/60 text-sm mb-6">por ano</p>
               <p className="text-white/80 text-sm">Maior protagonismo, visibilidade e ativação ao longo do ciclo fundador</p>
