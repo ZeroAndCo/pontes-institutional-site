@@ -3,8 +3,10 @@ import {
   BookOpen, Target, Lightbulb, Users, ArrowRight, Mail, MessageCircle, Phone,
   Sparkles, Heart, Building2, Brain, Eye, MapPin, Shield, BarChart3, Star,
   Check, GraduationCap, TreePine, Ear, RefreshCw, Zap, Layers, UserCheck,
-  Globe, School, Handshake, FileText, Camera, Award, TrendingUp
+  Globe, School, Handshake, FileText, Camera, Award, TrendingUp, Instagram, Linkedin
 } from "lucide-react";
+import adrianePhoto from "@/assets/adriane.jpeg";
+import nelmaPhoto from "@/assets/nelma.jpeg";
 import logo from "@/assets/logo.jpeg";
 import { analytics } from "@/lib/analytics";
 
@@ -662,7 +664,123 @@ const AgentesPontes = () => {
         </div>
       </section>
 
-      {/* Section 16 - CTA Final */}
+      {/* Section 16 - Quem Somos */}
+      <section className="min-h-screen flex items-center py-20 bg-cream">
+        <div className="container-narrow mx-auto px-6">
+          <span className="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium mb-6">Quem Somos</span>
+
+          <h2 className="text-3xl md:text-5xl font-display font-bold text-foreground mb-6">
+            Quem está por trás do <span className="text-primary">Agentes Pontes</span>
+          </h2>
+
+          <p className="text-lg text-muted-foreground mb-4 max-w-3xl">
+            O Pontes para Leitura é um hub de incentivo à leitura, cultura e impacto social que desenvolve projetos para marcas, empresas, instituições e territórios.
+          </p>
+
+          <p className="text-foreground font-medium mb-8">Nossa atuação combina:</p>
+
+          <div className="grid sm:grid-cols-2 gap-4 mb-12">
+            {[
+              { icon: Lightbulb, text: "Estratégia e desenho de projetos" },
+              { icon: MapPin, text: "Implementação e articulação territorial" },
+              { icon: BookOpen, text: "Leitura, cultura e desenvolvimento humano" },
+              { icon: Heart, text: "Impacto social e fortalecimento comunitário" },
+            ].map((item, i) => (
+              <div key={i} className="bg-card p-5 rounded-xl border border-border flex items-center gap-4">
+                <item.icon className="w-7 h-7 text-primary flex-shrink-0" />
+                <p className="text-foreground font-medium">{item.text}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* Team members */}
+          <div className="grid md:grid-cols-3 gap-6 mb-10">
+            {[
+              {
+                name: "Adriane Laste",
+                role: "Co-idealizadora",
+                company: "CLIC - Nossa Biblioteca",
+                photo: adrianePhoto,
+                linkedin: "https://www.linkedin.com/in/adrianelaste/",
+                instagram: "https://www.instagram.com/nossabibliotecaoficial/",
+                email: "adriane@nossabiblioteca.com.br",
+              },
+              {
+                name: "Maria Alice",
+                role: "Coordenação Pedagógica",
+                company: "",
+                photo: null,
+                linkedin: "",
+                instagram: "",
+                email: "",
+              },
+              {
+                name: "Nelma Zero",
+                role: "Co-idealizadora",
+                company: "Zero&Co Consultoria",
+                photo: nelmaPhoto,
+                linkedin: "https://www.linkedin.com/in/nelmazero/",
+                instagram: "https://www.instagram.com/zeroand.co/",
+                email: "nelma@zeroand.co",
+              },
+            ].map((member, i) => (
+              <div key={i} className="bg-card rounded-2xl border border-border overflow-hidden hover:shadow-lg transition-all">
+                <div className="h-32 gradient-hero flex items-center justify-center">
+                  {member.photo ? (
+                    <img src={member.photo} alt={member.name} className="w-20 h-20 rounded-full object-cover shadow-lg border-4 border-card" />
+                  ) : (
+                    <div className="w-20 h-20 rounded-full bg-card flex items-center justify-center shadow-lg border-4 border-card">
+                      <Users className="w-8 h-8 text-primary" />
+                    </div>
+                  )}
+                </div>
+                <div className="p-6 text-center">
+                  <h3 className="text-xl font-display font-bold text-foreground">{member.name}</h3>
+                  <p className="text-primary font-medium text-sm">{member.role}</p>
+                  {member.company && <p className="text-muted-foreground text-xs mt-1">{member.company}</p>}
+
+                  {(member.linkedin || member.instagram || member.email) && (
+                    <div className="flex gap-2 justify-center mt-4">
+                      {member.instagram && (
+                        <a href={member.instagram} target="_blank" rel="noopener noreferrer"
+                          onClick={() => analytics.socialClick('instagram', member.name)}
+                          className="p-2 rounded-lg bg-muted hover:bg-primary hover:text-primary-foreground transition-colors"
+                          aria-label={`Instagram de ${member.name}`}>
+                          <Instagram size={16} />
+                        </a>
+                      )}
+                      {member.linkedin && (
+                        <a href={member.linkedin} target="_blank" rel="noopener noreferrer"
+                          onClick={() => analytics.socialClick('linkedin', member.name)}
+                          className="p-2 rounded-lg bg-muted hover:bg-primary hover:text-primary-foreground transition-colors"
+                          aria-label={`LinkedIn de ${member.name}`}>
+                          <Linkedin size={16} />
+                        </a>
+                      )}
+                      {member.email && (
+                        <a href={`mailto:${member.email}`}
+                          onClick={() => analytics.socialClick('email', member.name)}
+                          className="p-2 rounded-lg bg-muted hover:bg-primary hover:text-primary-foreground transition-colors"
+                          aria-label={`Email de ${member.name}`}>
+                          <Mail size={16} />
+                        </a>
+                      )}
+                    </div>
+                  )}
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="bg-gradient-to-r from-primary/10 to-accent/10 rounded-2xl p-6 text-center">
+            <p className="text-lg font-display font-semibold text-foreground">
+              Unimos <span className="text-primary">visão estratégica</span>, <span className="text-accent">sensibilidade territorial</span> e capacidade de execução para transformar leitura em impacto social.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 17 - CTA Final */}
       <section className="min-h-screen flex items-center py-20 gradient-hero">
         <div className="container-narrow mx-auto px-6 text-center">
           <img src={logo} alt="Pontes para Leitura" className="w-24 h-24 rounded-full mx-auto mb-8 shadow-xl" />
