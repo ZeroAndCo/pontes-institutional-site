@@ -1,9 +1,39 @@
 import { useEffect } from "react";
 import {
-  BookOpen, Target, Lightbulb, Users, ArrowRight, Mail, MessageCircle, Phone,
-  Sparkles, Heart, Building2, Brain, Eye, MapPin, Shield, BarChart3, Star,
-  Check, GraduationCap, TreePine, Ear, RefreshCw, Zap, Layers, UserCheck,
-  Globe, School, Handshake, FileText, Camera, Award, TrendingUp, Instagram, Linkedin
+  BookOpen,
+  Target,
+  Lightbulb,
+  Users,
+  ArrowRight,
+  Mail,
+  MessageCircle,
+  Phone,
+  Sparkles,
+  Heart,
+  Building2,
+  Brain,
+  Eye,
+  MapPin,
+  Shield,
+  BarChart3,
+  Star,
+  Check,
+  GraduationCap,
+  TreePine,
+  Ear,
+  RefreshCw,
+  Zap,
+  Layers,
+  UserCheck,
+  Globe,
+  School,
+  Handshake,
+  FileText,
+  Camera,
+  Award,
+  TrendingUp,
+  Instagram,
+  Linkedin,
 } from "lucide-react";
 import adrianePhoto from "@/assets/adriane.jpeg";
 import nelmaPhoto from "@/assets/nelma.jpeg";
@@ -15,7 +45,9 @@ const AgentesPontes = () => {
   useEffect(() => {
     analytics.pageView("Agentes Pontes", "/agentes-pontes");
     document.title = "Agentes Pontes — Formação de Lideranças Leitoras | Pontes para Leitura";
-    return () => { document.title = "Pontes para Leitura"; };
+    return () => {
+      document.title = "Pontes para Leitura";
+    };
   }, []);
 
   const handleContactClick = (type: string) => {
@@ -32,7 +64,11 @@ const AgentesPontes = () => {
       <section className="min-h-screen flex items-center justify-center gradient-hero relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <svg className="absolute bottom-0 left-0 w-full h-64" viewBox="0 0 1440 320" preserveAspectRatio="none">
-            <path fill="currentColor" className="text-cream" d="M0,192L48,197.3C96,203,192,213,288,229.3C384,245,480,267,576,250.7C672,235,768,181,864,181.3C960,181,1056,235,1152,234.7C1248,235,1344,181,1392,154.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z" />
+            <path
+              fill="currentColor"
+              className="text-cream"
+              d="M0,192L48,197.3C96,203,192,213,288,229.3C384,245,480,267,576,250.7C672,235,768,181,864,181.3C960,181,1056,235,1152,234.7C1248,235,1344,181,1392,154.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+            />
           </svg>
         </div>
 
@@ -55,11 +91,12 @@ const AgentesPontes = () => {
           <span className="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium mb-6">O Conceito</span>
 
           <h2 className="text-3xl md:text-5xl font-display font-bold text-foreground mb-6">
-            O que são <span className="text-primary">Agentes Pontes</span>?
+            Quem são os <span className="text-primary">Agentes Pontes</span>?
           </h2>
 
           <p className="text-lg text-muted-foreground mb-10 max-w-3xl">
-            Territórios não se transformam apenas com acesso. Eles se transformam quando pessoas locais se tornam pontes de mudança. O que realmente gera transformação é formar pessoas capazes de mobilizar leitura, escuta, repertório, pertencimento e convivência de forma contínua dentro das comunidades.
+            Territórios não se transformam apenas com acesso. Eles se transformam quando pessoas locais se tornam pontes de mudança. O que realmente gera transformação é formar pessoas capazes de mobilizar leitura, escuta, repertório, pertencimento e
+            convivência de forma contínua dentro das comunidades.
           </p>
 
           <div className="grid sm:grid-cols-2 gap-6 mb-10">
@@ -94,7 +131,8 @@ const AgentesPontes = () => {
           </h2>
 
           <p className="text-lg text-white/80 mb-10 max-w-3xl">
-            Em muitos territórios, a leitura ainda não ocupa um lugar vivo no cotidiano. O que falta, muitas vezes, não é apenas material. Falta a construção de um ecossistema leitor sustentado por pessoas, espaços, vínculos e experiências significativas.
+            Em muitos territórios, a leitura ainda não ocupa um lugar vivo no cotidiano. O que falta, muitas vezes, não é apenas material. Falta a construção de um ecossistema leitor sustentado por pessoas, espaços, vínculos e experiências
+            significativas.
           </p>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
@@ -127,9 +165,7 @@ const AgentesPontes = () => {
             Mais do que formar leitores, o Agentes Pontes forma <span className="text-accent">capacidade local de transformação</span>
           </h2>
 
-          <p className="text-lg text-muted-foreground mb-10 max-w-3xl">
-            O projeto nasce para formar pessoas que atuem como Agentes Pontes: mediadores locais capazes de conectar leitura, escuta, repertório, pertencimento e mobilização comunitária.
-          </p>
+          <p className="text-lg text-muted-foreground mb-10 max-w-3xl">O projeto nasce para formar pessoas que atuem como Agentes Pontes: mediadores locais capazes de conectar leitura, escuta, repertório, pertencimento e mobilização comunitária.</p>
 
           <p className="text-foreground font-medium mb-8">A proposta entende a leitura não apenas como prática educacional, mas como ferramenta de:</p>
 
@@ -162,11 +198,13 @@ const AgentesPontes = () => {
           <span className="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium mb-6">O Programa</span>
 
           <h2 className="text-3xl md:text-5xl font-display font-bold text-foreground mb-4">
-            O que é o <span className="text-primary">Agentes Pontes</span>
+            O que é o projeto <span className="text-primary">Agentes Pontes</span>
           </h2>
 
           <p className="text-lg text-muted-foreground mb-4 max-w-3xl">Uma jornada formativa que transforma leitura em presença ativa no território.</p>
-          <p className="text-foreground font-medium mb-8 max-w-3xl">O Agentes Pontes é um programa estruturado de formação e ativação prática que prepara pessoas para atuar como multiplicadoras de experiências leitoras com intencionalidade, escuta e vínculo.</p>
+          <p className="text-foreground font-medium mb-8 max-w-3xl">
+            O Agentes Pontes é um programa estruturado de formação e ativação prática que prepara pessoas para atuar como multiplicadoras de experiências leitoras com intencionalidade, escuta e vínculo.
+          </p>
 
           <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-4 mb-10">
             {[
@@ -204,7 +242,7 @@ const AgentesPontes = () => {
           </h2>
 
           <p className="text-lg text-muted-foreground mb-10 max-w-3xl">
-            Uma metodologia inspirada em abordagens contemporâneas de transformação social, como a Teoria U. Em vez de levar respostas prontas, o projeto forma pessoas para perceber melhor seus contextos e construir novas possibilidades a partir deles.
+            Uma metodologia inspirada em abordagens contemporâneas de transformação social. Em vez de levar respostas prontas, o projeto forma pessoas para perceber melhor seus contextos e construir novas possibilidades a partir deles.
           </p>
 
           <h3 className="text-xl font-semibold text-foreground mb-8">3 movimentos da metodologia</h3>
@@ -241,26 +279,28 @@ const AgentesPontes = () => {
             Uma metodologia desenhada para gerar <span className="text-orange-light">adesão, continuidade e impacto</span>
           </h2>
 
-          <p className="text-lg text-cream/80 mb-10 max-w-3xl">
-            O programa é implementado em etapas que garantem consistência metodológica, aderência territorial e possibilidade real de continuidade após a formação.
-          </p>
+          <p className="text-lg text-cream/80 mb-10 max-w-3xl">O programa é implementado em etapas que garantem consistência metodológica, aderência territorial e possibilidade real de continuidade após a formação.</p>
 
           <div className="space-y-6 mb-10">
             {[
               {
-                num: "1", title: "Escuta e diagnóstico territorial",
+                num: "1",
+                title: "Escuta e diagnóstico territorial",
                 items: ["Encontros e rodas de leitura", "Ativações locais", "Leitura de contexto", "Mapeamento do território", "Identificação de necessidades e potências"],
               },
               {
-                num: "2", title: "Formação dos Agentes Pontes",
+                num: "2",
+                title: "Formação dos Agentes Pontes",
                 items: ["Mediação de leitura", "Facilitação e vínculo", "Repertório cultural", "Leitura como prática social"],
               },
               {
-                num: "3", title: "Aplicação prática",
+                num: "3",
+                title: "Aplicação prática",
                 items: ["Ações orientadas no território", "Experiências leitoras com a comunidade", "Ativação de espaços e públicos"],
               },
               {
-                num: "4", title: "Acompanhamento e consolidação",
+                num: "4",
+                title: "Acompanhamento e consolidação",
                 items: ["Monitoria semanal", "Registro das práticas", "Acompanhamento de resultados", "Sistematização de aprendizados"],
               },
             ].map((step) => (
@@ -349,9 +389,7 @@ const AgentesPontes = () => {
             Um programa adaptável a diferentes <span className="text-accent">contextos, públicos e realidades</span>
           </h2>
 
-          <p className="text-lg text-muted-foreground mb-10 max-w-3xl">
-            O Agentes Pontes pode ser implementado em diferentes formatos e territórios, respeitando características sociais, institucionais e comunitárias de cada contexto.
-          </p>
+          <p className="text-lg text-muted-foreground mb-10 max-w-3xl">O Agentes Pontes pode ser implementado em diferentes formatos e territórios, respeitando características sociais, institucionais e comunitárias de cada contexto.</p>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-10">
             {[
@@ -390,26 +428,28 @@ const AgentesPontes = () => {
             O impacto do programa aparece nas <span className="text-orange-light">pessoas, nas relações e no território</span>
           </h2>
 
-          <p className="text-lg text-white/80 mb-10 max-w-3xl">
-            O Agentes Pontes foi desenhado para gerar transformação em múltiplas camadas, articulando desenvolvimento humano, fortalecimento comunitário e ativação cultural.
-          </p>
+          <p className="text-lg text-white/80 mb-10 max-w-3xl">O Agentes Pontes foi desenhado para gerar transformação em múltiplas camadas, articulando desenvolvimento humano, fortalecimento comunitário e ativação cultural.</p>
 
           <div className="grid md:grid-cols-2 gap-6 mb-10">
             {[
               {
-                num: "1", title: "No indivíduo",
+                num: "1",
+                title: "No indivíduo",
                 items: ["Ampliação de repertório", "Fortalecimento da escuta e da expressão", "Aumento da autoconfiança para mediar e mobilizar"],
               },
               {
-                num: "2", title: "Nas relações",
+                num: "2",
+                title: "Nas relações",
                 items: ["Fortalecimento de vínculos", "Maior convivência e troca entre participantes", "Ampliação do senso de pertencimento"],
               },
               {
-                num: "3", title: "Nos espaços",
+                num: "3",
+                title: "Nos espaços",
                 items: ["Ativação de bibliotecas, escolas e espaços coletivos", "Maior circulação de leitura", "Criação de ambientes mais acolhedores e inspiradores"],
               },
               {
-                num: "4", title: "No território",
+                num: "4",
+                title: "No território",
                 items: ["Fortalecimento de redes locais", "Ampliação de capital cultural", "Geração de práticas que permanecem após o projeto"],
               },
             ].map((layer) => (
@@ -431,9 +471,7 @@ const AgentesPontes = () => {
           </div>
 
           <div className="text-center">
-            <p className="text-2xl font-display font-semibold text-orange-light">
-              Leitura não é apenas conteúdo. É infraestrutura de desenvolvimento humano e social.
-            </p>
+            <p className="text-2xl font-display font-semibold text-orange-light">Leitura não é apenas conteúdo. É infraestrutura de desenvolvimento humano e social.</p>
           </div>
         </div>
       </section>
@@ -447,26 +485,28 @@ const AgentesPontes = () => {
             Impacto social não pode ser apenas percebido. Precisa ser <span className="text-primary">acompanhado e evidenciado</span>.
           </h2>
 
-          <p className="text-lg text-muted-foreground mb-10 max-w-3xl">
-            O projeto prevê um sistema de acompanhamento que permite registrar participação, práticas realizadas, transformações percebidas e evidências de impacto no território.
-          </p>
+          <p className="text-lg text-muted-foreground mb-10 max-w-3xl">O projeto prevê um sistema de acompanhamento que permite registrar participação, práticas realizadas, transformações percebidas e evidências de impacto no território.</p>
 
           <div className="grid md:grid-cols-2 gap-6 mb-10">
             {[
               {
-                num: "1", title: "Participação",
+                num: "1",
+                title: "Participação",
                 items: ["Número de agentes formados", "Taxa de adesão e conclusão", "Presença nos encontros"],
               },
               {
-                num: "2", title: "Ativação",
+                num: "2",
+                title: "Ativação",
                 items: ["Número de mediações realizadas", "Frequência das ações", "Quantidade de pessoas alcançadas"],
               },
               {
-                num: "3", title: "Transformação",
+                num: "3",
+                title: "Transformação",
                 items: ["Fortalecimento do vínculo com a leitura", "Percepção de pertencimento", "Autoconfiança para mediação"],
               },
               {
-                num: "4", title: "Território",
+                num: "4",
+                title: "Território",
                 items: ["Ativação de espaços", "Fortalecimento de redes locais", "Potencial de continuidade pós-programa"],
               },
             ].map((dim) => (
@@ -541,9 +581,7 @@ const AgentesPontes = () => {
             Uma iniciativa aderente a diferentes <span className="text-orange-light">estratégias de investimento</span>
           </h2>
 
-          <p className="text-lg text-cream/80 mb-10 max-w-3xl">
-            O Agentes Pontes pode ser adaptado para diferentes perfis de apoiadores, mantendo coerência metodológica e personalização de implementação.
-          </p>
+          <p className="text-lg text-cream/80 mb-10 max-w-3xl">O Agentes Pontes pode ser adaptado para diferentes perfis de apoiadores, mantendo coerência metodológica e personalização de implementação.</p>
 
           <div className="grid md:grid-cols-3 gap-6">
             {[
@@ -634,9 +672,7 @@ const AgentesPontes = () => {
             O que torna o Agentes Pontes <span className="text-accent">único</span>
           </h2>
 
-          <p className="text-lg text-muted-foreground mb-10 max-w-3xl">
-            O programa se diferencia por unir leitura, formação humana, ativação territorial e acompanhamento de impacto em uma mesma jornada estruturada.
-          </p>
+          <p className="text-lg text-muted-foreground mb-10 max-w-3xl">O programa se diferencia por unir leitura, formação humana, ativação territorial e acompanhamento de impacto em uma mesma jornada estruturada.</p>
 
           <div className="space-y-4 mb-10">
             {[
@@ -649,9 +685,7 @@ const AgentesPontes = () => {
               "Pode ser customizado para diferentes contextos",
             ].map((item, i) => (
               <div key={i} className="bg-card p-5 rounded-xl border border-border flex items-center gap-4">
-                <div className="w-8 h-8 bg-gradient-to-br from-primary to-teal-dark rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0">
-                  {i + 1}
-                </div>
+                <div className="w-8 h-8 bg-gradient-to-br from-primary to-teal-dark rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0">{i + 1}</div>
                 <p className="text-foreground font-medium">{item}</p>
               </div>
             ))}
@@ -674,9 +708,7 @@ const AgentesPontes = () => {
             Quem está por trás do <span className="text-primary">Agentes Pontes</span>
           </h2>
 
-          <p className="text-lg text-muted-foreground mb-4 max-w-3xl">
-            O Pontes para Leitura é um hub de incentivo à leitura, cultura e impacto social que desenvolve projetos para marcas, empresas, instituições e territórios.
-          </p>
+          <p className="text-lg text-muted-foreground mb-4 max-w-3xl">O Pontes para Leitura é um hub de incentivo à leitura, cultura e impacto social que desenvolve projetos para marcas, empresas, instituições e territórios.</p>
 
           <p className="text-foreground font-medium mb-8">Nossa atuação combina:</p>
 
@@ -735,31 +767,40 @@ const AgentesPontes = () => {
                 <div className="p-6 text-center">
                   <h3 className="text-xl font-display font-bold text-foreground">{member.name}</h3>
                   <p className="text-primary font-medium text-sm">{member.role}</p>
-                  
 
                   {(member.linkedin || member.instagram || member.email) && (
                     <div className="flex gap-2 justify-center mt-4">
                       {member.instagram && (
-                        <a href={member.instagram} target="_blank" rel="noopener noreferrer"
-                          onClick={() => analytics.socialClick('instagram', member.name)}
+                        <a
+                          href={member.instagram}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          onClick={() => analytics.socialClick("instagram", member.name)}
                           className="p-2 rounded-lg bg-muted hover:bg-primary hover:text-primary-foreground transition-colors"
-                          aria-label={`Instagram de ${member.name}`}>
+                          aria-label={`Instagram de ${member.name}`}
+                        >
                           <Instagram size={16} />
                         </a>
                       )}
                       {member.linkedin && (
-                        <a href={member.linkedin} target="_blank" rel="noopener noreferrer"
-                          onClick={() => analytics.socialClick('linkedin', member.name)}
+                        <a
+                          href={member.linkedin}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          onClick={() => analytics.socialClick("linkedin", member.name)}
                           className="p-2 rounded-lg bg-muted hover:bg-primary hover:text-primary-foreground transition-colors"
-                          aria-label={`LinkedIn de ${member.name}`}>
+                          aria-label={`LinkedIn de ${member.name}`}
+                        >
                           <Linkedin size={16} />
                         </a>
                       )}
                       {member.email && (
-                        <a href={`mailto:${member.email}`}
-                          onClick={() => analytics.socialClick('email', member.name)}
+                        <a
+                          href={`mailto:${member.email}`}
+                          onClick={() => analytics.socialClick("email", member.name)}
                           className="p-2 rounded-lg bg-muted hover:bg-primary hover:text-primary-foreground transition-colors"
-                          aria-label={`Email de ${member.name}`}>
+                          aria-label={`Email de ${member.name}`}
+                        >
                           <Mail size={16} />
                         </a>
                       )}
@@ -787,13 +828,9 @@ const AgentesPontes = () => {
             Toda comunidade merece mais do que acesso. Merece pontes para <span className="text-orange-light">imaginar, ler e transformar</span> seu futuro.
           </h2>
 
-          <p className="text-xl text-cream/90 mb-4 max-w-2xl mx-auto">
-            Convidamos sua organização a fazer parte de uma iniciativa que forma pessoas, fortalece territórios e gera impacto social com profundidade, continuidade e legado.
-          </p>
+          <p className="text-xl text-cream/90 mb-4 max-w-2xl mx-auto">Convidamos sua organização a fazer parte de uma iniciativa que forma pessoas, fortalece territórios e gera impacto social com profundidade, continuidade e legado.</p>
 
-          <p className="text-lg text-cream/70 mb-10 max-w-2xl mx-auto">
-            Investir em leitura é importante. Investir em quem faz a leitura ganhar vida no território é ainda mais transformador.
-          </p>
+          <p className="text-lg text-cream/70 mb-10 max-w-2xl mx-auto">Investir em leitura é importante. Investir em quem faz a leitura ganhar vida no território é ainda mais transformador.</p>
 
           <div className="bg-white/10 rounded-2xl p-8 backdrop-blur-sm mb-10 max-w-xl mx-auto">
             <p className="text-2xl font-display font-semibold text-orange-light mb-2">Vamos construir esse legado juntos.</p>
@@ -806,7 +843,10 @@ const AgentesPontes = () => {
               href="https://wa.me/5511994066732?text=Olá! Gostaria de saber mais sobre o programa Agentes Pontes."
               target="_blank"
               rel="noopener noreferrer"
-              onClick={() => { handleContactClick("WhatsApp"); handleWhatsAppClick(); }}
+              onClick={() => {
+                handleContactClick("WhatsApp");
+                handleWhatsAppClick();
+              }}
               className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-lg transition-all hover:scale-105 shadow-lg"
             >
               <MessageCircle className="w-5 h-5" />
