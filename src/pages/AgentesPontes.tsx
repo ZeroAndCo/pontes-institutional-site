@@ -3,8 +3,10 @@ import {
   BookOpen, Target, Lightbulb, Users, ArrowRight, Mail, MessageCircle, Phone,
   Sparkles, Heart, Building2, Brain, Eye, MapPin, Shield, BarChart3, Star,
   Check, GraduationCap, TreePine, Ear, RefreshCw, Zap, Layers, UserCheck,
-  Globe, School, Handshake, FileText, Camera, Award, TrendingUp
+  Globe, School, Handshake, FileText, Camera, Award, TrendingUp, Instagram, Linkedin
 } from "lucide-react";
+import adrianePhoto from "@/assets/adriane.jpeg";
+import nelmaPhoto from "@/assets/nelma.jpeg";
 import logo from "@/assets/logo.jpeg";
 import { analytics } from "@/lib/analytics";
 
