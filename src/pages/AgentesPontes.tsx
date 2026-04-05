@@ -7,6 +7,7 @@ import {
 } from "lucide-react";
 import adrianePhoto from "@/assets/adriane.jpeg";
 import nelmaPhoto from "@/assets/nelma.jpeg";
+import mariaAlicePhoto from "@/assets/maria_alice.jpeg";
 import logo from "@/assets/logo.jpeg";
 import { analytics } from "@/lib/analytics";
 
@@ -698,26 +699,23 @@ const AgentesPontes = () => {
             {[
               {
                 name: "Adriane Laste",
-                role: "Co-idealizadora",
-                company: "CLIC - Nossa Biblioteca",
+                role: "Co-idealizadora & Coordenação de Operação",
                 photo: adrianePhoto,
                 linkedin: "https://www.linkedin.com/in/adrianelaste/",
                 instagram: "https://www.instagram.com/nossabibliotecaoficial/",
                 email: "adriane@nossabiblioteca.com.br",
               },
               {
-                name: "Maria Alice",
-                role: "Coordenação Pedagógica",
-                company: "",
-                photo: null,
+                name: "Maria Alice Capocchi Ribeiro",
+                role: "Co-idealizadora & Coordenação Pedagógica",
+                photo: mariaAlicePhoto,
                 linkedin: "",
                 instagram: "",
                 email: "",
               },
               {
                 name: "Nelma Zero",
-                role: "Co-idealizadora",
-                company: "Zero&Co Consultoria",
+                role: "Co-idealizadora & Coordenação de Comunicação e Marketing",
                 photo: nelmaPhoto,
                 linkedin: "https://www.linkedin.com/in/nelmazero/",
                 instagram: "https://www.instagram.com/zeroand.co/",
@@ -737,7 +735,7 @@ const AgentesPontes = () => {
                 <div className="p-6 text-center">
                   <h3 className="text-xl font-display font-bold text-foreground">{member.name}</h3>
                   <p className="text-primary font-medium text-sm">{member.role}</p>
-                  {member.company && <p className="text-muted-foreground text-xs mt-1">{member.company}</p>}
+                  
 
                   {(member.linkedin || member.instagram || member.email) && (
                     <div className="flex gap-2 justify-center mt-4">
