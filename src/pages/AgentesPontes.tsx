@@ -765,20 +765,8 @@ const AgentesPontes = () => {
                   <h3 className="text-xl font-display font-bold text-foreground">{member.name}</h3>
                   <p className="text-primary font-medium text-sm">{member.role}</p>
 
-                  {(member.linkedin || member.instagram || member.email) && (
+                  {(member.linkedin || member.email) && (
                     <div className="flex gap-2 justify-center mt-4">
-                      {member.instagram && (
-                        <a
-                          href={member.instagram}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          onClick={() => analytics.socialClick("instagram", member.name)}
-                          className="p-2 rounded-lg bg-muted hover:bg-primary hover:text-primary-foreground transition-colors"
-                          aria-label={`Instagram de ${member.name}`}
-                        >
-                          <Instagram size={16} />
-                        </a>
-                      )}
                       {member.linkedin && (
                         <a
                           href={member.linkedin}
