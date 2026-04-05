@@ -734,7 +734,7 @@ const AgentesPontes = () => {
                 <div className="p-6 text-center">
                   <h3 className="text-xl font-display font-bold text-foreground">{member.name}</h3>
                   <p className="text-primary font-medium text-sm">{member.role}</p>
-                  {member.company && <p className="text-muted-foreground text-xs mt-1">{member.company}</p>}
+                  
 
                   {(member.linkedin || member.instagram || member.email) && (
                     <div className="flex gap-2 justify-center mt-4">
