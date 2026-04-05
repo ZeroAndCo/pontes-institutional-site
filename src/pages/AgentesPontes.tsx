@@ -7,6 +7,7 @@ import {
 } from "lucide-react";
 import adrianePhoto from "@/assets/adriane.jpeg";
 import nelmaPhoto from "@/assets/nelma.jpeg";
+import mariaAlicePhoto from "@/assets/maria_alice.jpeg";
 import logo from "@/assets/logo.jpeg";
 import { analytics } from "@/lib/analytics";
 
