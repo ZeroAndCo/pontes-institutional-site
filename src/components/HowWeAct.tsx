@@ -3,19 +3,24 @@ import { Palette, Handshake, BookMarked, Building2, FileCheck, Fence, Users, Boo
 const HowWeAct = () => {
   const actions = [
     {
+      icon: LibraryBig,
+      title: "Projetos para Marcas",
+      description: "Desenvolvemos projetos de incentivo à leitura para marcas, com eventos, experiências, ações e ativações de vendas e desenvolvimento de produtos sociais vinculados à leitura.",
+    },
+    {
       icon: Users,
       title: "Projetos de Impacto Social",
       description: "Desenvolvemos projetos de incentivo à leitura em comunidades buscando a ampliação do desenvolvimento territorial e o impacto social local.",
     },
     {
-      icon: BookOpenText,
-      title: "Articulações no Ecossistema da Leitura",
-      description: "Desenvolvemos projetos e campanhas de incentivo à leitura através da articulação de diferentes atores do ecossistema de leitura/livro no país.",
+      icon: Handshake,
+      title: "Agentes Pontes — Formação de Mediadores de Leitura",
+      description: "Formação de Mediadores de Leitura com versão para professores, voltado para escolas e versão para empresas — treinamentos de RH, programa de voluntariado, etc.",
     },
     {
-      icon: LibraryBig,
-      title: "Projetos para marcas",
-      description: "Desenvolvemos projetos de incentivo à leitura para marcas, com eventos, experiências, ações e ativações de vendas e desenvolvimento de produtos sociais vinculados à leitura.",
+      icon: BookOpenText,
+      title: "CLAY — Inteligência no Hábito de Leitura",
+      description: "Aplicativo de apoio para o desenvolvimento do hábito da leitura (Em Breve)",
     },
     // {
     //   icon: Fence,
@@ -52,7 +57,7 @@ const HowWeAct = () => {
         </div>
 
         {/* Actions Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {actions.map((action, index) => (
             <div key={action.title} className="group relative p-8 bg-card rounded-2xl border border-border hover:border-primary/30 hover:shadow-xl transition-all duration-300 overflow-hidden">
               {/* Background decoration */}

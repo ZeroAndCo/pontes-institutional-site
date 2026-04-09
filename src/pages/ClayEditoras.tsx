@@ -79,6 +79,10 @@ const ClayEditoras = () => {
               A leitura ainda é valorizada. <strong>O que falta é um ambiente que ajude as pessoas a mantê-la viva no cotidiano.</strong>
             </p>
           </div>
+
+          <p className="text-xs text-muted-foreground mt-6">
+            Fontes: 6ª edição da pesquisa Retratos da Leitura no Brasil - Instituto Pró-Livro, 2025 e Pesquisa Qualitativa Interna (Fevereiro 2026)
+          </p>
         </div>
       </section>
 
@@ -112,7 +116,7 @@ const ClayEditoras = () => {
 
           <div className="bg-accent/10 rounded-2xl p-6 text-center">
             <p className="text-xl font-display font-semibold text-foreground">
-              O mercado não precisa apenas vender mais livros. Precisa <span className="text-accent">formar mais leitores ativos e recorrentes</span>.
+              O mercado precisa para além de vender mais livros se engajar em <span className="text-accent">formar mais leitores ativos e recorrentes</span>.
             </p>
           </div>
         </div>
@@ -164,7 +168,7 @@ const ClayEditoras = () => {
 
           <p className="text-xl text-muted-foreground mb-4 max-w-3xl">Um produto digital desenhado para apoiar a construção da prática leitora na vida adulta.</p>
 
-          <p className="text-lg text-foreground font-medium mb-8">O CLAY é um aplicativo/webapp que ajuda pessoas a começar, retomar e fortalecer o hábito da leitura, combinando:</p>
+          <p className="text-lg text-foreground font-medium mb-8">O CLAY é um aplicativo que ajuda pessoas a começar, retomar e fortalecer o hábito da leitura, combinando:</p>
 
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 mb-10">
             {[
@@ -290,6 +294,7 @@ const ClayEditoras = () => {
                   "Fortalecer posicionamento institucional",
                   "Apoiar a formação de novos leitores",
                   "Construir presença em um novo ambiente de leitura",
+                  "Quantidade a combinar de assinaturas gratuitas para equipe e clientes selecionadas da editora",
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-2 text-sm text-foreground">
                     <Check className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
@@ -310,6 +315,7 @@ const ClayEditoras = () => {
                   "Ativar catálogo com mais intensidade",
                   "Participar de campanhas e experiências ampliadas",
                   "Ocupar posição de maior visibilidade na jornada do usuário",
+                  "Quantidade a combinar de assinaturas gratuitas para equipe e clientes selecionadas da editora",
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-2 text-sm text-foreground">
                     <Check className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" />
@@ -426,14 +432,14 @@ const ClayEditoras = () => {
           <div className="grid md:grid-cols-2 gap-8 mb-10">
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
               <div className="text-sm font-medium text-orange-light mb-2">Editora Parceira Fundadora</div>
-              <div className="text-4xl md:text-5xl font-display font-bold text-white mb-2">R$ 12.000</div>
+              <div className="text-4xl md:text-5xl font-display font-bold text-white mb-2">R$ 36.000</div>
               <p className="text-white/60 text-sm mb-6">por ano</p>
               <p className="text-white/80 text-sm">Presença institucional + participação estratégica no ecossistema do CLAY</p>
             </div>
 
             <div className="bg-accent/20 backdrop-blur-sm rounded-2xl p-8 border border-accent/30">
               <div className="text-sm font-medium text-orange-light mb-2">Editora Parceira Destaque</div>
-              <div className="text-4xl md:text-5xl font-display font-bold text-white mb-2">R$ 18.000</div>
+              <div className="text-4xl md:text-5xl font-display font-bold text-white mb-2">R$ 45.000</div>
               <p className="text-white/60 text-sm mb-6">por ano</p>
               <p className="text-white/80 text-sm">Maior protagonismo, visibilidade e ativação ao longo do ciclo fundador</p>
             </div>
@@ -539,7 +545,7 @@ const ClayEditoras = () => {
             </a>
 
             <a
-              href="mailto:contato@pontesparaleitura.com.br?subject=Interesse em parceria CLAY - Editora Parceira Fundadora"
+              href="mailto:adriane@nossabiblioteca.com.br?subject=Interesse em parceria CLAY - Editora Parceira Fundadora"
               onClick={() => handleContactClick("Email")}
               className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-accent hover:bg-orange-dark text-white font-semibold rounded-lg transition-all hover:scale-105 shadow-lg"
             >

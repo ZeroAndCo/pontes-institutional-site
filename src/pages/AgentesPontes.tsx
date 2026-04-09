@@ -634,7 +634,7 @@ const AgentesPontes = () => {
           </h2>
 
           <p className="text-lg text-muted-foreground mb-10 max-w-3xl">
-            Além da execução do programa, os apoiadores contam com contrapartidas institucionais e de comunicação que fortalecem a visibilidade da parceria e a narrativa de impacto gerado.
+            Além da execução do programa, temos as contrapartidas institucionais e de comunicação que fortalecem a visibilidade da parceria e a narrativa de impacto gerado.
           </p>
 
           <div className="grid sm:grid-cols-2 gap-4 mb-10">
