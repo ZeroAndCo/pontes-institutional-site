@@ -534,7 +534,7 @@ const ClayEditoras = () => {
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="https://wa.me/5511994066732?text=Olá! Gostaria de saber mais sobre o CLAY e as cotas de Editora Parceira Fundadora."
+              href="https://wa.me/5551999818144?text=Olá! Gostaria de saber mais sobre o CLAY e as cotas de Editora Parceira Fundadora."
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => { handleContactClick("WhatsApp"); handleWhatsAppClick(); }}

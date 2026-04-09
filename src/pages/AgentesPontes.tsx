@@ -545,7 +545,7 @@ const AgentesPontes = () => {
           </h2>
 
           <p className="text-lg text-muted-foreground mb-10 max-w-3xl">
-            Ao apoiar o programa, sua organização se associa a uma iniciativa que combina educação, cultura, desenvolvimento territorial e impacto social mensurável. É um investimento em pessoas, comunidades e futuros possíveis.
+            Ao adquirir o programa, sua organização se associa a uma iniciativa que combina educação, cultura, desenvolvimento territorial e impacto social mensurável. É um investimento em pessoas, comunidades e futuros possíveis.
           </p>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-10">
