@@ -547,7 +547,7 @@ const AgentesPontes = () => {
           </h2>
 
           <p className="text-lg text-muted-foreground mb-10 max-w-3xl">
-            Ao apoiar o programa, sua organização se associa a uma iniciativa que combina educação, cultura, desenvolvimento territorial e impacto social mensurável. É um investimento em pessoas, comunidades e futuros possíveis.
+            Ao adquirir o programa, sua organização se associa a uma iniciativa que combina educação, cultura, desenvolvimento territorial e impacto social mensurável. É um investimento em pessoas, comunidades e futuros possíveis.
           </p>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-10">
@@ -636,7 +636,7 @@ const AgentesPontes = () => {
           </h2>
 
           <p className="text-lg text-muted-foreground mb-10 max-w-3xl">
-            Além da execução do programa, os apoiadores contam com contrapartidas institucionais e de comunicação que fortalecem a visibilidade da parceria e a narrativa de impacto gerado.
+            Além da execução do programa, temos as contrapartidas institucionais e de comunicação que fortalecem a visibilidade da parceria e a narrativa de impacto gerado.
           </p>
 
           <div className="grid sm:grid-cols-2 gap-4 mb-10">
@@ -736,23 +736,20 @@ const AgentesPontes = () => {
                 role: "Co-idealizadora & Coordenação de Operação",
                 photo: adrianePhoto,
                 linkedin: "https://www.linkedin.com/in/adrianelaste/",
-                instagram: "https://www.instagram.com/nossabibliotecaoficial/",
                 email: "adriane@nossabiblioteca.com.br",
               },
               {
                 name: "Maria Alice Capocchi Ribeiro",
                 role: "Co-idealizadora & Coordenação Pedagógica",
                 photo: mariaAlicePhoto,
-                linkedin: "",
-                instagram: "",
-                email: "",
+                linkedin: "https://www.linkedin.com/in/maria-alice-capocchi-ribeiro-8b7b6b136/",
+                email: "mariaalicecapocchi@gmail.com",
               },
               {
                 name: "Nelma Zero",
                 role: "Co-idealizadora & Coordenação de Comunicação e Marketing",
                 photo: nelmaPhoto,
                 linkedin: "https://www.linkedin.com/in/nelmazero/",
-                instagram: "https://www.instagram.com/zeroand.co/",
                 email: "nelma@zeroand.co",
               },
             ].map((member, i) => (
@@ -770,20 +767,8 @@ const AgentesPontes = () => {
                   <h3 className="text-xl font-display font-bold text-foreground">{member.name}</h3>
                   <p className="text-primary font-medium text-sm">{member.role}</p>
 
-                  {(member.linkedin || member.instagram || member.email) && (
+                  {(member.linkedin || member.email) && (
                     <div className="flex gap-2 justify-center mt-4">
-                      {member.instagram && (
-                        <a
-                          href={member.instagram}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          onClick={() => analytics.socialClick("instagram", member.name)}
-                          className="p-2 rounded-lg bg-muted hover:bg-primary hover:text-primary-foreground transition-colors"
-                          aria-label={`Instagram de ${member.name}`}
-                        >
-                          <Instagram size={16} />
-                        </a>
-                      )}
                       {member.linkedin && (
                         <a
                           href={member.linkedin}

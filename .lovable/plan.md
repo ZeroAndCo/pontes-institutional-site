@@ -1,36 +1,52 @@
 
 
-# Agentes Pontes — New Page at `/agentes-pontes`
+# Changes from PDF — Site, Agentes Pontes, and CLAY Pages
 
-## Summary
-Create a new hidden page following the same vertical-scroll, full-screen section pattern used in `Approach.tsx` and `ClayEditoras.tsx`. Content follows the uploaded 17-slide PDF about the "Agentes Pontes" reading mediators formation program, targeting potential investors/sponsors.
+## 1. Homepage — `src/components/HowWeAct.tsx`
 
-## Sections (mapped from PDF)
+Replace the current 3 boxes with 4 new ones:
 
-| # | Section | Background | Content |
-|---|---------|-----------|---------|
-| 1 | Cover | `gradient-hero` | "Agentes Pontes" title, subtitle about forming reading leaders, Pontes logo, bounce arrow |
-| 2 | O Que São Agentes Pontes | `bg-cream` | Why territories need local bridges of change, 4 bullet points (more than action, more than books, etc.) |
-| 3 | O Desafio | `bg-primary` (dark) | 5 challenges: limited access, no qualified mediation, few continuous experiences, low space activation, fragile community bonds |
-| 4 | A Tese | `bg-background` | Reading as tool for human development, community strengthening, cultural repertoire, territorial activation, social transformation |
-| 5 | O Programa | `bg-cream` | What Agentes Pontes is — 8 program components (articulation, events, 20h training, mapping, 60-day application, weekly monitoring, curation, results) |
-| 6 | Pilar Conceitual | `bg-background` | Teoria U methodology — 3 movements: listen, reposition, activate |
-| 7 | Como Funciona | `gradient-hero` | 4 program stages: diagnosis, training, practical application, consolidation |
-| 8 | Jornada de Transformação | `bg-cream` | Before/During/After transformation journey of a participant |
-| 9 | Públicos e Territórios | `bg-background` | Audiences reached (children, families, educators, community leaders, etc.) |
-| 10 | Impacto Social | `bg-primary` (dark) | 4 layers: individual, relationships, spaces, territory |
-| 11 | Avaliação e Trackeamento | `bg-cream` | 4 monitoring dimensions: participation, activation, transformation, territory |
-| 12 | Por Que Investir | `bg-background` | 6 institutional benefits (ESG, reputation, narrative, engagement) |
-| 13 | Perfis de Investidor | `gradient-hero` | 3 profiles: companies, institutes/foundations, private schools — table/cards |
-| 14 | Contrapartidas | `bg-cream` | 8 deliverables for sponsors |
-| 15 | Diferenciais | `bg-background` | 7 differentiators of the program |
-| 16 | CTA Final | `gradient-hero` | Invitation to join + WhatsApp, Email, Contact buttons |
+| # | Title | Description |
+|---|-------|-------------|
+| 1 | Projetos para Marcas | Desenvolvemos projetos de incentivo à leitura para marcas, com eventos, experiências, ações e ativações de vendas e desenvolvimento de produtos sociais vinculados à leitura. |
+| 2 | Projetos de Impacto Social | Desenvolvemos projetos de incentivo à leitura em comunidades buscando a ampliação do desenvolvimento territorial e o impacto social local. |
+| 3 | Agentes Pontes — Formação de Mediadores de Leitura | Formação de Mediadores de Leitura com versão para professores, voltado para escolas e versão para empresas — treinamentos de RH, programa de voluntariado, etc. |
+| 4 | CLAY — Inteligência no Hábito de Leitura | Aplicativo de apoio para o desenvolvimento do hábito da leitura (Em Breve) |
 
-## Files to create/edit
+Grid changes from `lg:grid-cols-3` to `lg:grid-cols-4` (or `md:grid-cols-2 lg:grid-cols-4`).
 
-1. **Create `src/pages/AgentesPontes.tsx`** — Full page component with all sections above, GA tracking (`pageView`, `contactClick`, `whatsappClick`), dynamic `document.title`
-2. **Edit `src/App.tsx`** — Import and add route `<Route path="/agentes-pontes" element={<AgentesPontes />} />`
-3. **Edit `public/sitemap.xml`** — Add `/agentes-pontes` entry
+## 2. Agentes Pontes — `src/pages/AgentesPontes.tsx`
 
-Page will NOT be linked from main navigation (same hidden approach as the other B2B pages).
+**Section 12 "Por Que Investir"** (line ~548): Change paragraph text from current to:
+> "Ao apoiar o programa, sua organização se associa a uma iniciativa que combina educação, cultura, desenvolvimento territorial e impacto social mensurável. É um investimento em pessoas, comunidades e futuros possíveis."
+
+(Note: the current text already matches this. The PDF says to change "Ao adquirir" to "Ao apoiar" — it seems this was already done. Will verify and keep as-is.)
+
+**Section 14 "Contrapartidas"** (line ~637): Change paragraph text to:
+> "Além da execução do programa, temos as contrapartidas institucionais e de comunicação que fortalecem a visibilidade da parceria e a narrativa de impacto gerado."
+
+## 3. CLAY Editoras — `src/pages/ClayEditoras.tsx`
+
+**Slide 2 "O Cenário"** (line ~49-83): Add a footer note with sources:
+> "Fontes: 6ª edição da pesquisa Retratos da Leitura no Brasil - Instituto Pró-Livro, 2025 e Pesquisa Qualitativa Interna (Fevereiro 2026)"
+
+**Slide 3 "Oportunidade de Mercado"** (line ~115): Change the orange box closing text from "O mercado não precisa apenas vender mais livros. Precisa formar mais leitores ativos e recorrentes" to:
+> "O mercado precisa para além de vender mais livros se engajar em formar mais leitores ativos e recorrentes."
+
+**Slide 5 "A Solução"** (line ~167): Remove "/webapp" from "aplicativo/webapp" — keep only "aplicativo".
+
+**Slide 8 "Estrutura de Cotas"** (lines 288-318): Add to BOTH boxes a new item:
+> "Quantidade a combinar de assinaturas gratuitas para equipe e clientes selecionadas da editora"
+
+**Slide 10 "Investimento"** (lines 429, 436): Change prices:
+- Fundadora: R$ 12.000 → R$ 36.000
+- Destaque: R$ 18.000 → R$ 45.000
+
+**Slide 12 "CTA Final"** (lines 530-557): Update contact links to use Adriane's details (WhatsApp number and email already point to the right places — will use `adriane@nossabiblioteca.com.br` for email).
+
+## Files to edit
+
+1. `src/components/HowWeAct.tsx` — Update actions array to 4 items, adjust grid
+2. `src/pages/AgentesPontes.tsx` — Update Contrapartidas paragraph
+3. `src/pages/ClayEditoras.tsx` — 6 text changes (sources footer, orange box text, remove webapp, add subscription item, update prices, update CTA contacts)
 
