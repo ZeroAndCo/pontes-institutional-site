@@ -405,6 +405,8 @@ const AgentesPontes = () => {
               { icon: BookOpen, text: "Bibliotecas comunitárias" },
               { icon: School, text: "Escolas e espaços educativos" },
               { icon: Globe, text: "Espaços públicos e coletivos de convivência" },
+              { icon: Building2, text: "Empresas" },
+              { icon: UserCheck, text: "Profissionais" },
             ].map((item, i) => (
               <div key={i} className="bg-card p-4 rounded-xl border border-border flex items-center gap-3 hover:border-accent/50 transition-colors">
                 <item.icon className="w-6 h-6 text-accent flex-shrink-0" />
