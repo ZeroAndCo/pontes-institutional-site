@@ -39,6 +39,7 @@ import adrianePhoto from "@/assets/adriane.jpeg";
 import nelmaPhoto from "@/assets/nelma.jpeg";
 import mariaAlicePhoto from "@/assets/maria_alice.jpeg";
 import logo from "@/assets/logo.jpeg";
+import odsQuatro from "@/assets/ods-4.jpg";
 import { analytics } from "@/lib/analytics";
 
 const AgentesPontes = () => {
