@@ -587,6 +587,14 @@ const AgentesPontes = () => {
 
           <p className="text-lg text-cream/80 mb-10 max-w-3xl">O Agentes Pontes pode ser adaptado para diferentes perfis de financiadores, parceiros e/ou apoiadores, mantendo coerência metodológica e personalização de implementação.</p>
 
+          <div className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl border border-white/10 mb-6 flex items-start gap-4 hover:bg-white/15 transition-colors">
+            <Handshake className="w-10 h-10 text-orange-light flex-shrink-0" />
+            <div>
+              <h3 className="text-xl font-bold text-cream mb-1">Parcerias</h3>
+              <p className="text-cream/80">Editoras, Bibliotecas e livrarias e Poder Público Local</p>
+            </div>
+          </div>
+
           <div className="grid md:grid-cols-3 gap-6">
             {[
               {
