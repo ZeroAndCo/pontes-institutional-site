@@ -39,6 +39,7 @@ import adrianePhoto from "@/assets/adriane.jpeg";
 import nelmaPhoto from "@/assets/nelma.jpeg";
 import mariaAlicePhoto from "@/assets/maria_alice.jpeg";
 import logo from "@/assets/logo.jpeg";
+import odsQuatro from "@/assets/ods-4.jpg";
 import { analytics } from "@/lib/analytics";
 
 const AgentesPontes = () => {
@@ -405,6 +406,8 @@ const AgentesPontes = () => {
               { icon: BookOpen, text: "Bibliotecas comunitárias" },
               { icon: School, text: "Escolas e espaços educativos" },
               { icon: Globe, text: "Espaços públicos e coletivos de convivência" },
+              { icon: Building2, text: "Empresas" },
+              { icon: UserCheck, text: "Profissionais" },
             ].map((item, i) => (
               <div key={i} className="bg-card p-4 rounded-xl border border-border flex items-center gap-3 hover:border-accent/50 transition-colors">
                 <item.icon className="w-6 h-6 text-accent flex-shrink-0" />
@@ -584,6 +587,14 @@ const AgentesPontes = () => {
           </h2>
 
           <p className="text-lg text-cream/80 mb-10 max-w-3xl">O Agentes Pontes pode ser adaptado para diferentes perfis de financiadores, parceiros e/ou apoiadores, mantendo coerência metodológica e personalização de implementação.</p>
+
+          <div className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl border border-white/10 mb-6 flex items-start gap-4 hover:bg-white/15 transition-colors">
+            <Handshake className="w-10 h-10 text-orange-light flex-shrink-0" />
+            <div>
+              <h3 className="text-xl font-bold text-cream mb-1">Parcerias</h3>
+              <p className="text-cream/80">Editoras, Bibliotecas e livrarias e Poder Público Local</p>
+            </div>
+          </div>
 
           <div className="grid md:grid-cols-3 gap-6">
             {[
@@ -802,6 +813,52 @@ const AgentesPontes = () => {
             <p className="text-lg font-display font-semibold text-foreground">
               Unimos <span className="text-primary">visão estratégica</span>, <span className="text-accent">sensibilidade territorial</span> e capacidade de execução para transformar leitura em impacto social.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 16.5 - ODS 4 */}
+      <section className="min-h-screen flex items-center py-20 bg-cream">
+        <div className="container-narrow mx-auto px-6">
+          <span className="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium mb-6">Compromisso Global</span>
+
+          <h2 className="text-3xl md:text-5xl font-display font-bold text-foreground mb-6">
+            Alinhado ao <span className="text-primary">ODS 4</span> da ONU
+          </h2>
+
+          <p className="text-lg text-muted-foreground mb-10 max-w-3xl">
+            O Agentes Pontes contribui diretamente para o <strong>Objetivo de Desenvolvimento Sustentável 4 — Educação de Qualidade</strong> da Agenda 2030 da ONU, ao promover o acesso à leitura, formação de mediadores e oportunidades de aprendizagem ao longo da vida em territórios diversos.
+          </p>
+
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div className="flex justify-center">
+              <a
+                href="https://brasil.un.org/pt-br/sdgs/4"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block hover:scale-105 transition-transform"
+              >
+                <img
+                  src={odsQuatro}
+                  alt="Selo ODS 4 — Educação de Qualidade (ONU)"
+                  className="w-64 h-64 md:w-80 md:h-80 object-contain rounded-2xl shadow-xl"
+                />
+              </a>
+            </div>
+
+            <div className="space-y-4">
+              {[
+                { icon: GraduationCap, text: "Promover oportunidades de aprendizagem ao longo da vida" },
+                { icon: BookOpen, text: "Garantir acesso equitativo à leitura e ao repertório cultural" },
+                { icon: Users, text: "Formar mediadores como multiplicadores de educação" },
+                { icon: Globe, text: "Reduzir desigualdades educacionais nos territórios" },
+              ].map((item, i) => (
+                <div key={i} className="bg-card p-5 rounded-xl border border-border flex items-start gap-3 hover:border-primary/50 transition-colors">
+                  <item.icon className="w-6 h-6 text-primary flex-shrink-0 mt-0.5" />
+                  <p className="text-foreground font-medium">{item.text}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
