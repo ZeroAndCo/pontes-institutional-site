@@ -36,25 +36,14 @@ const Header = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <a href="/" className="flex items-center gap-3">
-            <img
-              src={logo}
-              alt="Pontes para Leitura"
-              className="h-14 w-14 rounded-full object-cover"
-            />
-            <span className="font-display font-bold text-xl text-foreground hidden sm:block">
-              Pontes para Leitura
-            </span>
+            <img src={logo} alt="Pontes para Leitura" className="h-14 w-14 rounded-full object-cover" />
+            <span className="font-display font-bold text-xl text-foreground hidden sm:block">Pontes para Leitura</span>
           </a>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
-              <a
-                key={link.href}
-                href={getHref(link.href)}
-                onClick={() => handleNavClick(link.label)}
-                className="text-orange hover:text-orange-dark transition-colors font-medium"
-              >
+              <a key={link.href} href={getHref(link.href)} onClick={() => handleNavClick(link.label)} className="text-orange hover:text-orange-dark transition-colors font-medium">
                 {link.label}
               </a>
             ))}

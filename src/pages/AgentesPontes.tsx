@@ -95,8 +95,8 @@ const AgentesPontes = () => {
           </h2>
 
           <p className="text-lg text-muted-foreground mb-10 max-w-3xl">
-            Territórios não se transformam apenas com acesso. Eles se transformam quando pessoas locais se tornam pontes de mudança. O que realmente gera transformação é formar pessoas capazes de mobilizar leitura, escuta, repertório, pertencimento e
-            convivência de forma contínua dentro das comunidades.
+            Territórios não se transformam apenas com acesso. Eles se transformam quando pessoas locais se tornam pontes ativas para mudança. O que realmente gera transformação é formar pessoas capazes de mobilizar leitura, escuta, repertório,
+            pertencimento e convivência de forma contínua dentro das comunidades.
           </p>
 
           <div className="grid sm:grid-cols-2 gap-6 mb-10">
@@ -115,7 +115,7 @@ const AgentesPontes = () => {
 
           <div className="bg-primary/10 rounded-2xl p-6 border-l-4 border-primary">
             <p className="text-lg text-foreground">
-              Impacto real acontece quando o <strong>território passa a sustentar a mudança</strong>.
+              Impacto real acontece quando o <strong>território passa a sustentar e fazer parte da mudança</strong>.
             </p>
           </div>
         </div>
@@ -127,12 +127,12 @@ const AgentesPontes = () => {
           <span className="inline-block px-4 py-2 bg-white/10 text-white rounded-full text-sm font-medium mb-6">O Desafio</span>
 
           <h2 className="text-3xl md:text-5xl font-display font-bold mb-6">
-            O desafio não é apenas acesso ao livro. É a ausência de <span className="text-orange-light">mediação, vínculo e continuidade</span>.
+            O desafio não é apenas o acesso ao livro. É enfrentar e superar a ausência de <span className="text-orange-light">mediação, vínculo e continuidade</span>.
           </h2>
 
           <p className="text-lg text-white/80 mb-10 max-w-3xl">
             Em muitos territórios, a leitura ainda não ocupa um lugar vivo no cotidiano. O que falta, muitas vezes, não é apenas material. Falta a construção de um ecossistema leitor sustentado por pessoas, espaços, vínculos e experiências
-            significativas.
+            significativas. Queremos enfrentar e superar:
           </p>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
@@ -162,10 +162,12 @@ const AgentesPontes = () => {
           <span className="inline-block px-4 py-2 bg-accent/10 text-accent rounded-full text-sm font-medium mb-6">A Tese</span>
 
           <h2 className="text-3xl md:text-5xl font-display font-bold text-foreground mb-6">
-            Mais do que formar leitores, o Agentes Pontes forma <span className="text-accent">capacidade local de transformação</span>
+            Mais do que formar leitores, o Projeto Agentes Pontes forma <span className="text-accent">capacidade local e organizacional de transformação.</span>
           </h2>
 
-          <p className="text-lg text-muted-foreground mb-10 max-w-3xl">O projeto nasce para formar pessoas que atuem como Agentes Pontes: mediadores locais capazes de conectar leitura, escuta, repertório, pertencimento e mobilização comunitária.</p>
+          <p className="text-lg text-muted-foreground mb-10 max-w-3xl">
+            Este projeto tem por objetivo formar pessoas para atuarem como Agentes Pontes: mediadores locais capazes de conectar leitura, escuta, repertório, pertencimento, mobilização comunitária, debate e desenvolvimento pessoal e profissional.
+          </p>
 
           <p className="text-foreground font-medium mb-8">A proposta entende a leitura não apenas como prática educacional, mas como ferramenta de:</p>
 
@@ -250,7 +252,7 @@ const AgentesPontes = () => {
           <div className="grid md:grid-cols-3 gap-6 mb-10">
             {[
               { icon: Ear, num: "1", title: "Escutar o território", desc: "Compreender relações, necessidades, repertórios e potências locais." },
-              { icon: RefreshCw, num: "2", title: "Reposicionar a atuação", desc: "Ampliar escuta, presença, repertório e capacidade de mediação." },
+              { icon: RefreshCw, num: "2", title: "Adequar a atuação", desc: "Ampliar escuta, presença, repertório e capacidade de mediação." },
               { icon: Zap, num: "3", title: "Ativar e experimentar", desc: "Transformar reflexão em prática por meio de ações leitoras e experiências locais." },
             ].map((item) => (
               <div key={item.num} className="bg-card p-8 rounded-2xl border border-border hover:border-accent/50 transition-colors text-center">
@@ -350,19 +352,19 @@ const AgentesPontes = () => {
                 phase: "Antes",
                 color: "bg-primary/10 border-primary/30",
                 accent: "text-primary",
-                desc: "Uma educadora, liderança local, agente comunitário, professora, bibliotecária ou mediadora deseja fazer mais, mas nem sempre encontra repertório, apoio ou metodologia.",
+                desc: "Educadores, líderes locais, agentes comunitários, professores, bibliotecários ou mediadores desejam fazer mais, mas nem sempre encontram repertório, apoio ou metodologia.",
               },
               {
                 phase: "Durante",
                 color: "bg-accent/10 border-accent/30",
                 accent: "text-accent",
-                desc: "Ao longo da formação, essa pessoa amplia sua escuta, fortalece sua prática e se conecta a novas formas de mobilizar leitura e convivência.",
+                desc: "Ao longo da formação, os participantes ampliam sua escuta, fortalecem sua prática e se conectam a novas formas de mobilizar leitura e convivência.",
               },
               {
                 phase: "Depois",
                 color: "bg-primary/10 border-primary/30",
                 accent: "text-primary",
-                desc: "Ela passa a criar experiências que aproximam pessoas, ativam espaços e fortalecem vínculos no território.",
+                desc: "Os Agentes Pontes passam a criar experiências que aproximam pessoas, ativam espaços e fortalecem vínculos no território.",
               },
             ].map((item) => (
               <div key={item.phase} className={`p-8 rounded-2xl border-2 ${item.color}`}>
@@ -374,7 +376,7 @@ const AgentesPontes = () => {
 
           <div className="bg-gradient-to-r from-primary/10 to-accent/10 rounded-2xl p-6 border-l-4 border-primary">
             <p className="text-lg text-foreground font-medium">
-              Quando uma pessoa se forma, uma prática muda. Quando uma prática muda, <strong>um território começa a se mover</strong>.
+              Quando um(a) Agente Pontes se forma, uma prática muda. Quando uma prática muda, <strong>um território começa a se mover</strong>.
             </p>
           </div>
         </div>
@@ -435,7 +437,7 @@ const AgentesPontes = () => {
               {
                 num: "1",
                 title: "No indivíduo",
-                items: ["Ampliação de repertório", "Fortalecimento da escuta e da expressão", "Aumento da autoconfiança para mediar e mobilizar"],
+                items: ["Ampliação de repertório", "Pensamento crítico", "Desenvolvimento pessoal e profissional"],
               },
               {
                 num: "2",
@@ -450,7 +452,7 @@ const AgentesPontes = () => {
               {
                 num: "4",
                 title: "No território",
-                items: ["Fortalecimento de redes locais", "Ampliação de capital cultural", "Geração de práticas que permanecem após o projeto"],
+                items: ["Fortalecimento de redes locais, pessoais e profissionais", "Ampliação de capital cultural", "Geração de práticas que permanecem após o projeto"],
               },
             ].map((layer) => (
               <div key={layer.num} className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl border border-white/10">
@@ -471,7 +473,7 @@ const AgentesPontes = () => {
           </div>
 
           <div className="text-center">
-            <p className="text-2xl font-display font-semibold text-orange-light">Leitura não é apenas conteúdo. É infraestrutura de desenvolvimento humano e social.</p>
+            <p className="text-2xl font-display font-semibold text-orange-light">Leitura não é apenas conteúdo. É infraestrutura de desenvolvimento humano, social e organizacional.</p>
           </div>
         </div>
       </section>
@@ -575,13 +577,13 @@ const AgentesPontes = () => {
       {/* Section 13 - Perfis de Investidor */}
       <section className="min-h-screen flex items-center py-20 gradient-hero">
         <div className="container-narrow mx-auto px-6">
-          <span className="inline-block px-4 py-2 bg-white/10 text-white rounded-full text-sm font-medium mb-6">Perfis de Investidor</span>
+          <span className="inline-block px-4 py-2 bg-white/10 text-white rounded-full text-sm font-medium mb-6">Perfil de Financiador ou Parceiro</span>
 
           <h2 className="text-3xl md:text-5xl font-display font-bold text-cream mb-6">
-            Uma iniciativa aderente a diferentes <span className="text-orange-light">estratégias de investimento</span>
+            Uma iniciativa aderente a diferentes <span className="text-orange-light">estratégias de financiamento</span>
           </h2>
 
-          <p className="text-lg text-cream/80 mb-10 max-w-3xl">O Agentes Pontes pode ser adaptado para diferentes perfis de apoiadores, mantendo coerência metodológica e personalização de implementação.</p>
+          <p className="text-lg text-cream/80 mb-10 max-w-3xl">O Agentes Pontes pode ser adaptado para diferentes perfis de financiadores, parceiros e/ou apoiadores, mantendo coerência metodológica e personalização de implementação.</p>
 
           <div className="grid md:grid-cols-3 gap-6">
             {[
