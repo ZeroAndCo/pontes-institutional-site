@@ -7,10 +7,10 @@ import {
 import logo from "@/assets/logo.jpeg";
 import { analytics } from "@/lib/analytics";
 
-const ClayEditoras = () => {
+const ClayParceiros = () => {
   useEffect(() => {
-    analytics.pageView("Clay Editoras", "/editoras-parceiras-fundadoras");
-    document.title = "CLAY — Editoras Parceiras Fundadoras | Pontes para Leitura";
+    analytics.pageView("Clay Parceiros", "/parceiros-fundadores");
+    document.title = "CLAY — Parceiros Fundadores | Pontes para Leitura";
     return () => { document.title = "Pontes para Leitura"; };
   }, []);
 
@@ -19,7 +19,7 @@ const ClayEditoras = () => {
   };
 
   const handleWhatsAppClick = () => {
-    analytics.whatsappClick("clay_editoras_cta");
+    analytics.whatsappClick("clay_parceiros_cta");
   };
 
   return (
@@ -37,7 +37,7 @@ const ClayEditoras = () => {
           <p className="text-lg text-cream/70 font-medium tracking-widest uppercase mb-4">Apresentação Comercial</p>
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-display font-bold text-cream mb-6">CLAY</h1>
           <p className="text-xl md:text-2xl text-orange-light font-display font-semibold mb-4">Inteligência no Hábito da Leitura</p>
-          <p className="text-lg text-cream/80 max-w-xl mx-auto">Convite para Editoras Parceiras Fundadoras</p>
+          <p className="text-lg text-cream/80 max-w-xl mx-auto">Convite para Parcerias Fundadoras</p>
 
           <div className="mt-12 animate-bounce">
             <ArrowRight className="w-8 h-8 text-cream/60 rotate-90 mx-auto" />
@@ -51,20 +51,20 @@ const ClayEditoras = () => {
           <span className="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium mb-6">O Cenário</span>
 
           <h2 className="text-3xl md:text-5xl font-display font-bold text-foreground mb-6">
-            O Brasil não tem apenas menos leitores. Tem milhões que nunca transformaram leitura em <span className="text-primary">hábito</span>.
+            O Brasil não tem apenas menos pessoas leitoras. Tem milhões que nunca transformaram leitura em <span className="text-primary">hábito</span>.
           </h2>
 
           <p className="text-lg text-muted-foreground mb-10 max-w-3xl">
-            A leitura segue sendo reconhecida como um valor importante — mas, na prática, ela tem perdido espaço na rotina, na atenção e nos hábitos cotidianos dos brasileiros.
+            A leitura segue sendo reconhecida como um valor importante — mas, na prática, ela tem perdido espaço na rotina, na atenção e nos hábitos cotidianos da população brasileira.
           </p>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
             {[
               { icon: BookX, value: "27%", label: "leram um livro inteiro nos últimos 3 meses" },
               { icon: Smartphone, value: "81%", label: "ocupam tempo livre com internet e redes sociais" },
-              { icon: BookOpen, value: "18%", label: "se declaram leitores de literatura" },
+              { icon: BookOpen, value: "18%", label: "se declaram leitoras de literatura" },
               { icon: TrendingDown, value: "20%", label: "usam tempo livre para ler livros" },
-              { icon: Users, value: "1ª vez", label: "não leitores superam leitores no Brasil" },
+              { icon: Users, value: "1ª vez", label: "quem não lê supera quem lê no Brasil" },
             ].map((stat, i) => (
               <div key={i} className="bg-card p-6 rounded-xl border border-border text-center">
                 <stat.icon className="w-8 h-8 text-primary mx-auto mb-3" />
@@ -96,13 +96,13 @@ const ClayEditoras = () => {
           </h2>
 
           <p className="text-lg text-muted-foreground mb-10 max-w-3xl">
-            Novos formatos, comunidades e experiências estão reabrindo caminhos para a leitura. Isso cria uma oportunidade estratégica para editoras que desejam estar presentes não apenas na venda, mas também na formação do leitor contemporâneo.
+            Novos formatos, comunidades e experiências estão reabrindo caminhos para a leitura. Isso cria uma oportunidade estratégica para quem deseja estar presente não apenas na venda, mas também na formação do público leitor contemporâneo.
           </p>
 
           <div className="space-y-4 mb-10">
             {[
               { icon: Users, text: "Crescimento de clubes de leitura e comunidades leitoras" },
-              { icon: Star, text: "Expansão de mediadores, curadores e creators literários" },
+              { icon: Star, text: "Expansão de mediação, curadoria e creators literários" },
               { icon: Heart, text: "Fortalecimento de eventos, feiras e experiências em torno do livro" },
               { icon: Smartphone, text: "Crescimento de plataformas digitais, e-books e audiobooks" },
               { icon: Target, text: "Ampliação de projetos de leitura via leis de incentivo e impacto social" },
@@ -116,7 +116,7 @@ const ClayEditoras = () => {
 
           <div className="bg-accent/10 rounded-2xl p-6 text-center">
             <p className="text-xl font-display font-semibold text-foreground">
-              O mercado precisa para além de vender mais livros se engajar em <span className="text-accent">formar mais leitores ativos e recorrentes</span>.
+              O mercado precisa para além de vender mais livros se engajar em <span className="text-accent">formar mais pessoas leitoras ativas e recorrentes</span>.
             </p>
           </div>
         </div>
@@ -141,7 +141,7 @@ const ClayEditoras = () => {
             {[
               { icon: Route, title: "Falta de constância", desc: "A leitura não se mantém com regularidade na rotina." },
               { icon: Zap, title: "Excesso de distrações", desc: "A atenção é disputada o tempo todo por telas, estímulos e urgências." },
-              { icon: Heart, title: "Falta de pertencimento", desc: "Muitos adultos não se veem como leitores — ou não encontram apoio para permanecer." },
+              { icon: Heart, title: "Falta de pertencimento", desc: "Muitas pessoas adultas não se veem como leitoras — ou não encontram apoio para permanecer." },
             ].map((item, i) => (
               <div key={i} className="bg-white/10 rounded-2xl p-8 backdrop-blur-sm border border-white/10">
                 <item.icon className="w-10 h-10 text-orange-light mb-4" />
@@ -204,12 +204,12 @@ const ClayEditoras = () => {
           </h2>
 
           <p className="text-lg text-muted-foreground mb-10 max-w-3xl">
-            O CLAY foi desenhado para apoiar o usuário em diferentes momentos da sua relação com a leitura.
+            O CLAY foi desenhado para apoiar a pessoa usuária em diferentes momentos da sua relação com a leitura.
           </p>
 
           <div className="space-y-6 mb-10">
             {[
-              { num: "1", title: "Onboarding inteligente", desc: "O app identifica o momento, o perfil e os objetivos do usuário." },
+              { num: "1", title: "Onboarding inteligente", desc: "O app identifica o momento, o perfil e os objetivos de quem está começando." },
               { num: "2", title: "Trilhas de hábito leitor", desc: "Caminhos guiados para desenvolver consistência e prazer na leitura." },
               { num: "3", title: "Rituais e ações", desc: "Pequenas intervenções ajudam a encaixar a leitura na rotina cotidiana." },
               { num: "4", title: "Progresso e gamificação", desc: "Metas, desafios, marcos e acompanhamento incentivam a continuidade." },
@@ -233,24 +233,24 @@ const ClayEditoras = () => {
         </div>
       </section>
 
-      {/* Slide 7 - Oportunidade para Editoras */}
+      {/* Slide 7 - Oportunidade para Parcerias */}
       <section className="min-h-screen flex items-center py-20 gradient-hero">
         <div className="container-narrow mx-auto px-6 text-center">
-          <span className="inline-block px-4 py-2 bg-white/10 text-white rounded-full text-sm font-medium mb-6">Oportunidade para Editoras</span>
+          <span className="inline-block px-4 py-2 bg-white/10 text-white rounded-full text-sm font-medium mb-6">Oportunidade para Parcerias</span>
 
           <h2 className="text-3xl md:text-5xl font-display font-bold text-cream mb-6">
             O CLAY cria contexto para que livros sejam <span className="text-orange-light">desejados, lidos e comprados</span>
           </h2>
 
           <p className="text-lg text-cream/80 mb-12 max-w-3xl mx-auto">
-            Ao apoiar o CLAY, a editora passa a fazer parte de uma jornada de leitura contínua — ocupando um espaço estratégico antes, durante e depois da compra.
+            Ao apoiar o CLAY, sua organização passa a fazer parte de uma jornada de leitura contínua — ocupando um espaço estratégico antes, durante e depois da compra.
           </p>
 
           <div className="grid sm:grid-cols-2 gap-6 mt-8">
             {[
-              { icon: Users, title: "Formação de novos leitores", desc: "Amplia a base de pessoas que podem se relacionar com o livro de forma mais consistente." },
+              { icon: Users, title: "Formação de novas pessoas leitoras", desc: "Amplia a base de pessoas que podem se relacionar com o livro de forma mais consistente." },
               { icon: BookOpen, title: "Recorrência e redescoberta", desc: "Cria oportunidades de novas leituras, novas portas de entrada e novas conexões com o catálogo." },
-              { icon: Eye, title: "Presença de marca em contexto de valor", desc: "A editora passa a estar presente na jornada leitora — e não apenas no ponto de venda." },
+              { icon: Eye, title: "Presença de marca em contexto de valor", desc: "Sua marca passa a estar presente na jornada leitora — e não apenas no ponto de venda." },
               { icon: ShoppingCart, title: "Potencial de ativação comercial", desc: "Campanhas, combos, descontos e experiências podem conectar hábito + descoberta + compra." },
             ].map((item, i) => (
               <div key={i} className="bg-white/10 backdrop-blur-sm p-8 rounded-xl border border-white/10 hover:bg-white/15 transition-colors text-left">
@@ -263,7 +263,7 @@ const ClayEditoras = () => {
 
           <div className="mt-12 bg-accent/20 rounded-2xl p-8 border border-accent/30">
             <p className="text-xl font-display font-semibold text-cream">
-              O CLAY aproxima editoras da <span className="text-orange-light">construção do leitor</span> — e não apenas da venda do livro.
+              O CLAY aproxima parcerias da <span className="text-orange-light">construção da prática leitora</span> — e não apenas da venda do livro.
             </p>
           </div>
         </div>
@@ -275,7 +275,7 @@ const ClayEditoras = () => {
           <span className="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium mb-6">Estrutura de Cotas</span>
 
           <h2 className="text-3xl md:text-5xl font-display font-bold text-foreground mb-6">
-            Escolha como sua editora quer <span className="text-primary">participar</span>
+            Escolha como <span className="text-primary">participar</span>
           </h2>
 
           <p className="text-lg text-muted-foreground mb-10">
@@ -285,16 +285,16 @@ const ClayEditoras = () => {
           <div className="grid md:grid-cols-2 gap-8 mb-10">
             {/* Fundadora */}
             <div className="bg-card p-8 rounded-2xl border-2 border-primary/30 relative">
-              <div className="inline-block px-3 py-1 bg-primary/10 text-primary rounded-full text-xs font-semibold mb-4">Parceira Fundadora</div>
+              <div className="inline-block px-3 py-1 bg-primary/10 text-primary rounded-full text-xs font-semibold mb-4">Parceria Fundadora</div>
               <h3 className="text-xl font-bold text-foreground mb-4">Presença institucional e participação estratégica na fase inicial</h3>
-              <p className="text-sm text-muted-foreground mb-6">Ideal para editoras que desejam:</p>
+              <p className="text-sm text-muted-foreground mb-6">Ideal para quem deseja:</p>
               <ul className="space-y-3">
                 {[
                   "Integrar o ecossistema desde o início",
                   "Fortalecer posicionamento institucional",
-                  "Apoiar a formação de novos leitores",
+                  "Apoiar a formação de novas pessoas leitoras",
                   "Construir presença em um novo ambiente de leitura",
-                  "Quantidade a combinar de assinaturas gratuitas para equipe e clientes selecionadas da editora",
+                  "Quantidade a combinar de assinaturas gratuitas para equipe e clientes selecionados da organização parceira",
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-2 text-sm text-foreground">
                     <Check className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
@@ -306,16 +306,16 @@ const ClayEditoras = () => {
 
             {/* Destaque */}
             <div className="bg-card p-8 rounded-2xl border-2 border-accent/30 relative">
-              <div className="inline-block px-3 py-1 bg-accent/10 text-accent rounded-full text-xs font-semibold mb-4">Parceira Destaque</div>
+              <div className="inline-block px-3 py-1 bg-accent/10 text-accent rounded-full text-xs font-semibold mb-4">Parceria Destaque</div>
               <h3 className="text-xl font-bold text-foreground mb-4">Maior protagonismo, visibilidade e ativação de marca</h3>
-              <p className="text-sm text-muted-foreground mb-6">Ideal para editoras que desejam:</p>
+              <p className="text-sm text-muted-foreground mb-6">Ideal para quem deseja:</p>
               <ul className="space-y-3">
                 {[
                   "Ampliar presença e destaque no projeto",
                   "Ativar catálogo com mais intensidade",
                   "Participar de campanhas e experiências ampliadas",
-                  "Ocupar posição de maior visibilidade na jornada do usuário",
-                  "Quantidade a combinar de assinaturas gratuitas para equipe e clientes selecionadas da editora",
+                  "Ocupar posição de maior visibilidade na jornada de leitura",
+                  "Quantidade a combinar de assinaturas gratuitas para equipe e clientes selecionados da organização parceira",
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-2 text-sm text-foreground">
                     <Check className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" />
@@ -340,11 +340,11 @@ const ClayEditoras = () => {
           <span className="inline-block px-4 py-2 bg-accent/10 text-accent rounded-full text-sm font-medium mb-6">Contrapartidas Premium</span>
 
           <h2 className="text-3xl md:text-5xl font-display font-bold text-foreground mb-6">
-            Onde sua editora <span className="text-accent">vive</span> dentro do CLAY
+            Onde sua marca <span className="text-accent">vive</span> dentro do CLAY
           </h2>
 
           <p className="text-lg text-muted-foreground mb-10 max-w-3xl">
-            Uma presença que combina posicionamento, descoberta, relacionamento e ativação ao longo da jornada do usuário.
+            Uma presença que combina posicionamento, descoberta, relacionamento e ativação ao longo da jornada de leitura.
           </p>
 
           <div className="grid md:grid-cols-2 gap-6">
@@ -355,7 +355,7 @@ const ClayEditoras = () => {
                 title: "Presença Institucional",
                 subtitle: "Sua marca como parte da construção do projeto",
                 items: [
-                  "Reconhecimento como editora parceira do ciclo fundador",
+                  "Reconhecimento como parceria do ciclo fundador",
                   "Presença institucional em materiais e comunicação",
                   "Associação à inovação, leitura, cultura e impacto social",
                 ],
@@ -363,10 +363,10 @@ const ClayEditoras = () => {
               {
                 num: "2",
                 icon: Route,
-                title: "Presença na Jornada do Leitor",
+                title: "Presença na Jornada de Leitura",
                 subtitle: "Sua marca conectada à experiência, não ao ponto de venda",
                 items: [
-                  "Presença em campanhas temáticas e ativações editoriais",
+                  "Presença em campanhas temáticas e ativações literárias",
                   "Integração com jornadas, trilhas ou momentos de descoberta",
                   "Conexão com experiências de leitura e comunidade",
                 ],
@@ -377,7 +377,7 @@ const ClayEditoras = () => {
                 title: "Catálogo, Benefícios & Conversão",
                 subtitle: "O livro em circulação dentro de um ambiente de engajamento contínuo",
                 items: [
-                  "Oferta de livros com benefícios para assinantes",
+                  "Oferta de livros com benefícios para quem assina",
                   "Campanhas conjuntas de marketing digital",
                   "Ativações de descoberta, recorrência e redescoberta de catálogo",
                 ],
@@ -421,7 +421,7 @@ const ClayEditoras = () => {
           <span className="inline-block px-4 py-2 bg-white/10 text-white rounded-full text-sm font-medium mb-6">Investimento</span>
 
           <h2 className="text-3xl md:text-5xl font-display font-bold mb-6">
-            Convite para participação como <span className="text-orange-light">Parceira Fundadora</span>
+            Convite para participação como <span className="text-orange-light">Parceria Fundadora</span>
           </h2>
 
           <p className="text-lg text-white/80 mb-12 max-w-3xl">
@@ -431,14 +431,14 @@ const ClayEditoras = () => {
           {/* Pricing Cards */}
           <div className="grid md:grid-cols-2 gap-8 mb-10">
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
-              <div className="text-sm font-medium text-orange-light mb-2">Editora Parceira Fundadora</div>
+              <div className="text-sm font-medium text-orange-light mb-2">Parceria Fundadora</div>
               <div className="text-4xl md:text-5xl font-display font-bold text-white mb-2">R$ 36.000</div>
               <p className="text-white/60 text-sm mb-6">por ano</p>
               <p className="text-white/80 text-sm">Presença institucional + participação estratégica no ecossistema do CLAY</p>
             </div>
 
             <div className="bg-accent/20 backdrop-blur-sm rounded-2xl p-8 border border-accent/30">
-              <div className="text-sm font-medium text-orange-light mb-2">Editora Parceira Destaque</div>
+              <div className="text-sm font-medium text-orange-light mb-2">Parceria Destaque</div>
               <div className="text-4xl md:text-5xl font-display font-bold text-white mb-2">R$ 45.000</div>
               <p className="text-white/60 text-sm mb-6">por ano</p>
               <p className="text-white/80 text-sm">Maior protagonismo, visibilidade e ativação ao longo do ciclo fundador</p>
@@ -453,9 +453,9 @@ const ClayEditoras = () => {
               <div className="p-4 font-semibold text-orange-light text-sm border-b border-white/10 text-center">Destaque</div>
 
               {[
-                { cat: "Presença como parceira fundadora", fund: "✓", dest: "Com maior destaque" },
+                { cat: "Presença como parceria fundadora", fund: "✓", dest: "Com maior destaque" },
                 { cat: "Integração em campanhas e ativações", fund: "Presença base", dest: "Presença ampliada" },
-                { cat: "Benefícios para assinantes", fund: "✓", dest: "Com maior recorrência" },
+                { cat: "Benefícios para quem assina", fund: "✓", dest: "Com maior recorrência" },
                 { cat: "Participação em experiências especiais", fund: "Selecionada", dest: "Maior prioridade" },
                 { cat: "Visibilidade no ecossistema", fund: "Institucional", dest: "Ampliada" },
                 { cat: "Conexão com aprendizados e evolução", fund: "✓", dest: "✓" },
@@ -477,7 +477,7 @@ const ClayEditoras = () => {
           <span className="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium mb-6">Impacto</span>
 
           <h2 className="text-3xl md:text-5xl font-display font-bold text-foreground mb-6">
-            Ao apoiar o CLAY, sua editora ajuda a <span className="text-primary">formar leitores</span>
+            Ao apoiar o CLAY, sua organização ajuda a <span className="text-primary">formar pessoas leitoras</span>
           </h2>
 
           <p className="text-lg text-muted-foreground mb-10 max-w-3xl">
@@ -503,7 +503,7 @@ const ClayEditoras = () => {
 
           <div className="bg-gradient-to-r from-primary/10 to-accent/10 rounded-2xl p-6 border-l-4 border-primary">
             <p className="text-xl font-display font-semibold text-foreground">
-              Formar leitores é também <span className="text-primary">fortalecer o futuro do mercado editorial</span>.
+              Formar pessoas leitoras é também <span className="text-primary">fortalecer o futuro do ecossistema do livro</span>.
             </p>
           </div>
         </div>
@@ -519,22 +519,22 @@ const ClayEditoras = () => {
           </h2>
 
           <p className="text-xl text-cream/90 mb-4 max-w-2xl mx-auto">
-            Estamos abrindo as primeiras cotas para editoras parceiras fundadoras do CLAY.
+            Estamos abrindo as primeiras cotas para parcerias fundadoras do CLAY.
           </p>
 
           <p className="text-lg text-cream/70 mb-10 max-w-2xl mx-auto">
-            Será um prazer apresentar melhor o projeto, compartilhar o modelo de parceria e construir com sua editora uma presença estratégica dentro desta nova plataforma de formação leitora.
+            Será um prazer apresentar melhor o projeto, compartilhar o modelo de parceria e construir com sua organização uma presença estratégica dentro desta nova plataforma de formação leitora.
           </p>
 
           <div className="bg-white/10 rounded-2xl p-8 backdrop-blur-sm mb-10 max-w-xl mx-auto">
-            <p className="text-2xl font-display font-semibold text-orange-light mb-2">CLAY + Editoras Parceiras</p>
-            <p className="text-cream/80">Uma parceria para formar leitores, fortalecer catálogos e ampliar impacto.</p>
+            <p className="text-2xl font-display font-semibold text-orange-light mb-2">CLAY + Parcerias Fundadoras</p>
+            <p className="text-cream/80">Uma parceria para formar pessoas leitoras, fortalecer catálogos e ampliar impacto.</p>
           </div>
 
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="https://wa.me/5551999818144?text=Olá! Gostaria de saber mais sobre o CLAY e as cotas de Editora Parceira Fundadora."
+              href="https://wa.me/5551999818144?text=Olá! Gostaria de saber mais sobre o CLAY e as cotas de Parceria Fundadora."
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => { handleContactClick("WhatsApp"); handleWhatsAppClick(); }}
@@ -545,7 +545,7 @@ const ClayEditoras = () => {
             </a>
 
             <a
-              href="mailto:adriane@nossabiblioteca.com.br?subject=Interesse em parceria CLAY - Editora Parceira Fundadora"
+              href="mailto:adriane@nossabiblioteca.com.br?subject=Interesse em parceria CLAY - Parceria Fundadora"
               onClick={() => handleContactClick("Email")}
               className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-accent hover:bg-orange-dark text-white font-semibold rounded-lg transition-all hover:scale-105 shadow-lg"
             >
@@ -568,4 +568,4 @@ const ClayEditoras = () => {
   );
 };
 
-export default ClayEditoras;
+export default ClayParceiros;
