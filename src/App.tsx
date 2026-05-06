@@ -5,7 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import Approach from "./pages/Approach";
-import ClayEditoras from "./pages/ClayEditoras";
+import ClayParceiros from "./pages/ClayParceiros";
 import AgentesPontes from "./pages/AgentesPontes";
 import MonthlyBooks from "./pages/MonthlyBooks";
 import NotFound from "./pages/NotFound";
